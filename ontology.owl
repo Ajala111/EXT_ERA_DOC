@@ -19906,24 +19906,7 @@ Lenght of the walkway: [integer] m</skos:scopeNote>
   - an evacuation and rescue point.
 - a vehicle length.</skos:scopeNote>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://data.europa.eu/949/lengthOfLinearElement -->
-
-
-    <owl:DatatypeProperty rdf:about="http://data.europa.eu/949/lengthOfLinearElement">
-        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/949/length"/>
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/LinearElement"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
-        <ccsView>INFRA</ccsView>
-        <exp rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-3</exp>
-        <unitOfMeasure rdf:resource="http://qudt.org/vocab/unit/M"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-19</terms:created>
-        <rdfs:comment xml:lang="en">Distance along the LinearElement&apos;s track centre line. </rdfs:comment>
-        <rdfs:label xml:lang="en">LengthOfLinearElement</rdfs:label>
-    </owl:DatatypeProperty>
-    
+        
 
 
     <!-- http://data.europa.eu/949/lengthOfNetLinearElement -->
