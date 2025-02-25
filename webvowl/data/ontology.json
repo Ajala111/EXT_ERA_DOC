@@ -4641,7 +4641,7 @@
       "note" : [ {
         "identifier" : "note",
         "language" : "es",
-        "value" : "'intervalo de fecha-hora' se puede utilizar sólo para un intervalo cuyos límites coinciden con un elemento de fecha-hora alineados con el calendario y la zona horaria indicados. Por ejemplo, aunque ambos tienen una duración de un día, el intervalo de 24 horas que empieza en la media noche del comienzo del 8 mayo en Europa Central se puede expresar como un 'intervalo de fecha-hora', el intervalo de 24 horas que empieza a las 1:30pm no.",
+        "value" : "'intervalo de fecha-hora' se puede utilizar sï¿½lo para un intervalo cuyos lï¿½mites coinciden con un elemento de fecha-hora alineados con el calendario y la zona horaria indicados. Por ejemplo, aunque ambos tienen una duraciï¿½n de un dï¿½a, el intervalo de 24 horas que empieza en la media noche del comienzo del 8 mayo en Europa Central se puede expresar como un 'intervalo de fecha-hora', el intervalo de 24 horas que empieza a las 1:30pm no.",
         "type" : "label"
       }, {
         "identifier" : "note",
@@ -4657,7 +4657,7 @@
       }, {
         "identifier" : "definition",
         "language" : "es",
-        "value" : "'intervalo de fecha-hora' es una subclase de 'intervalo propio', definida utilizando el multi-elemento 'descripción de fecha-hora'.",
+        "value" : "'intervalo de fecha-hora' es una subclase de 'intervalo propio', definida utilizando el multi-elemento 'descripciï¿½n de fecha-hora'.",
         "type" : "label"
       } ]
     },
@@ -4668,7 +4668,7 @@
     },
     "comment" : {
       "en" : "DateTimeInterval is a subclass of ProperInterval, defined using the multi-element DateTimeDescription.",
-      "es" : "'intervalo de fecha-hora' es una subclase de 'intervalo propio', definida utilizando el multi-elemento 'descripción de fecha-hora'."
+      "es" : "'intervalo de fecha-hora' es una subclase de 'intervalo propio', definida utilizando el multi-elemento 'descripciï¿½n de fecha-hora'."
     },
     "attributes" : [ "external" ],
     "id" : "240",
@@ -7062,7 +7062,7 @@
       "en" : "Signal"
     },
     "comment" : {
-      "en" : "A railway signal is a visual display device (next to the tracks or via a DMI in the cabin) that conveys instructions or provides advance warning of instructions regarding the driver’s authority to proceed."
+      "en" : "A railway signal is a visual display device (next to the tracks or via a DMI in the cabin) that conveys instructions or provides advance warning of instructions regarding the driverï¿½s authority to proceed."
     },
     "id" : "478",
     "superClasses" : [ "246" ]
@@ -7157,7 +7157,7 @@
       }, {
         "identifier" : "definition",
         "language" : "es",
-        "value" : "Una entidad temporal con una extensión o duración cero.",
+        "value" : "Una entidad temporal con una extensiï¿½n o duraciï¿½n cero.",
         "type" : "label"
       } ]
     },
@@ -7168,7 +7168,7 @@
     },
     "comment" : {
       "en" : "A temporal entity with zero extent or duration",
-      "es" : "Una entidad temporal con una extensión o duración cero."
+      "es" : "Una entidad temporal con una extensiï¿½n o duraciï¿½n cero."
     },
     "attributes" : [ "external" ],
     "id" : "1177",
@@ -9595,7 +9595,7 @@
       "en" : "ETCS Packet_69"
     },
     "comment" : {
-      "en" : " Track Condition Station Platforms (The packet gives details concerning the location and height of station platforms for use by the trainâ?s door control system)"
+      "en" : " Track Condition Station Platforms (The packet gives details concerning the location and height of station platforms for use by the trainï¿½?s door control system)"
     },
     "id" : "93",
     "superClasses" : [ "296" ]
@@ -9873,7 +9873,7 @@
       "en" : "ETCS Packet_41"
     },
     "comment" : {
-      "en" : " Level Transition Order (Packet to identify where a level transition shall take place. In case of mixed levels, the successive M_LEVELTRâ?s go from the highest priority level to the lowest one)"
+      "en" : " Level Transition Order (Packet to identify where a level transition shall take place. In case of mixed levels, the successive M_LEVELTRï¿½?s go from the highest priority level to the lowest one)"
     },
     "id" : "14",
     "superClasses" : [ "296" ]
@@ -9927,7 +9927,7 @@
       "en" : "ETCS Packet_46"
     },
     "comment" : {
-      "en" : " Conditional Level Transition Order (Packet for a conditional level transition. The successive M_LEVELTRâ?s go from the highest priority level to the lowest one)"
+      "en" : " Conditional Level Transition Order (Packet for a conditional level transition. The successive M_LEVELTRï¿½?s go from the highest priority level to the lowest one)"
     },
     "id" : "54",
     "superClasses" : [ "296" ]
@@ -12683,7 +12683,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Connectivity and the navigability between consecutive linear elements are resolved by using net relations. It models how different elements are related to each other, representing a transition from one element to another. \nNet relations specify where two linear elements connect. This could be at the origin of one element, the end of another, or even at specific offsets along their lengths. For example, two tracks might connect at a junction, with one ending at offset 1500 and the other beginning at offset 0. \nNetRelation explicitly models these connections by linking two linear elements (elementA and elementB) and defining their physical or logical relationship.\nNet relations also specify the permitted directions of travel:\n•\tAB: Trains can move from element A to element B.\n•\tBA: Trains can move from element B to element A.\n•\tBoth: Movement is bidirectional.\n•\tNone: No movement is allowed between the two elements.\nTo make this even more precise, net relations include information about whether the connection is at the origin of each element. For example, a relation might indicate that Track A ends at its origin (offset 0) and connects to Track B at its start (isOnOriginOfElementA and isOnOriginOfElementB).\n",
+        "value" : "Connectivity and the navigability between consecutive linear elements are resolved by using net relations. It models how different elements are related to each other, representing a transition from one element to another. \nNet relations specify where two linear elements connect. This could be at the origin of one element, the end of another, or even at specific offsets along their lengths. For example, two tracks might connect at a junction, with one ending at offset 1500 and the other beginning at offset 0. \nNetRelation explicitly models these connections by linking two linear elements (elementA and elementB) and defining their physical or logical relationship.\nNet relations also specify the permitted directions of travel:\nï¿½\tAB: Trains can move from element A to element B.\nï¿½\tBA: Trains can move from element B to element A.\nï¿½\tBoth: Movement is bidirectional.\nï¿½\tNone: No movement is allowed between the two elements.\nTo make this even more precise, net relations include information about whether the connection is at the origin of each element. For example, a relation might indicate that Track A ends at its origin (offset 0) and connects to Track B at its start (isOnOriginOfElementA and isOnOriginOfElementB).\n",
         "type" : "label"
       } ]
     },
@@ -13495,7 +13495,7 @@
       }, {
         "identifier" : "definition",
         "language" : "es",
-        "value" : "Una entidad temporal con extensión o duración distinta de cero, es decir, para la cual los valores de principio y fin del intervalo son diferentes.",
+        "value" : "Una entidad temporal con extensiï¿½n o duraciï¿½n distinta de cero, es decir, para la cual los valores de principio y fin del intervalo son diferentes.",
         "type" : "label"
       } ]
     },
@@ -13507,7 +13507,7 @@
     "subClasses" : [ "240" ],
     "comment" : {
       "en" : "A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different",
-      "es" : "Una entidad temporal con extensión o duración distinta de cero, es decir, para la cual los valores de principio y fin del intervalo son diferentes."
+      "es" : "Una entidad temporal con extensiï¿½n o duraciï¿½n distinta de cero, es decir, para la cual los valores de principio y fin del intervalo son diferentes."
     },
     "attributes" : [ "external" ],
     "id" : "241",
@@ -14788,7 +14788,7 @@
     "baseIri" : "http://data.europa.eu/949",
     "instances" : 0,
     "description" : {
-      "en" : "At this step, RINF does not allow to enter additional data referred to additional speed regulations and operating requirements relating to locomotives (e.g., locomotive classes and associated maximum speed) or traffic types (e.g., maximum speed of freight traffic or passenger traffic).\n\nThe load capability describes the weakest point of this track within this section of line (which is normally a bridge or other sub-track structure). It is expressed as a combination of the line category and speed permitted for trains exerting loads defined for this line category. The result of the classification process is set out in EN 15528:2021 (Annex A) and referred to in that standard as “Line Category”. \n\nIt represents the ability of the infrastructure to withstand the vertical loads imposed by vehicles on the track for regular service as a combination of Line Category with a permitted speed according to EN 15528:2021\n\nMore than one combination may be published for the same track if applicable, but it has to be done by repetition of the parameter with one value selected only – that is why ‘Y’ is given in line ‘Can be repeated’\n\nFor the following cases, it is not possible to use EN 15528:20021categories of line classification:\n- TSI categories of line P1520 and F1520 (passenger traffic or freight traffic at any speed)\n- TSI categories of line P1600 and F1600 (passenger traffic or freight traffic at any speed)"
+      "en" : "At this step, RINF does not allow to enter additional data referred to additional speed regulations and operating requirements relating to locomotives (e.g., locomotive classes and associated maximum speed) or traffic types (e.g., maximum speed of freight traffic or passenger traffic).\n\nThe load capability describes the weakest point of this track within this section of line (which is normally a bridge or other sub-track structure). It is expressed as a combination of the line category and speed permitted for trains exerting loads defined for this line category. The result of the classification process is set out in EN 15528:2021 (Annex A) and referred to in that standard as ï¿½Line Categoryï¿½. \n\nIt represents the ability of the infrastructure to withstand the vertical loads imposed by vehicles on the track for regular service as a combination of Line Category with a permitted speed according to EN 15528:2021\n\nMore than one combination may be published for the same track if applicable, but it has to be done by repetition of the parameter with one value selected only ï¿½ that is why ï¿½Yï¿½ is given in line ï¿½Can be repeatedï¿½\n\nFor the following cases, it is not possible to use EN 15528:20021categories of line classification:\n- TSI categories of line P1520 and F1520 (passenger traffic or freight traffic at any speed)\n- TSI categories of line P1600 and F1600 (passenger traffic or freight traffic at any speed)"
     },
     "annotations" : {
       "isDefinedBy" : [ {
@@ -18133,15 +18133,15 @@
       "en" : "Organization",
       "it" : "Organizzazione",
       "fr" : "Organisation",
-      "es" : "organización"
+      "es" : "organizaciï¿½n"
     },
     "subClasses" : [ "1573", "1208", "1062" ],
     "comment" : {
       "ja" : "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
       "en" : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `<http://www.w3.org/2004/02/skos/core#prefLabel>` for the primary (possibly legally recognized name), `<http://www.w3.org/2004/02/skos/core#altLabel>` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_",
-      "it" : "Rappresenta una collezione di persone organizzate all'interno di una communità o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e  può agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le proprietà di SKOS. In particolare, `<http://www.w3.org/2004/02/skos/core#prefLabel>` per il nome principale (possibilmente un nome legalmente riconosciuto)”, `<http://www.w3.org/2004/02/skos/core#altLabel>` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici.",
-      "fr" : "Représente un groupe de personnes organisées en communauté où tout autre forme de structure sociale, commerciale ou politique. Le groupe a un but commun ou une raison d'être qui va au-delà de la somme des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations sont souvent décomposables en structures hiérarchisées. Il est recommandé que des labels lexicaux SKOS soient utilisés pour nommer l'Organisation. En particulier `<http://www.w3.org/2004/02/skos/core#prefLabel>` pour le nom principal (en général le nom légal), `<http://www.w3.org/2004/02/skos/core#altLabel>` pour les noms alternatifs (marques, sigles, appellations familières) et `skos:notation` pour indiquer un code provenant d'une liste de code.",
-      "es" : "Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como “agente”. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas. Se recomienda el uso de etiquetas de SKOS para denominar a cada “organización”. En concreto, `<http://www.w3.org/2004/02/skos/core#prefLabel>` para la denominación principal o recomendada (aquella reconocida legalmente, siempre que sea posible), `<http://www.w3.org/2004/02/skos/core#altLabel>` para denominaciones alternativas (nombre comercial, sigla, denominación por la que se conoce a la organización coloquialmente) y `skos:notation` para referirse al código que identifique a la organización en una lista de códigos. Denominaciones alternativas: _colectivo_ _corporación_ _grupo_"
+      "it" : "Rappresenta una collezione di persone organizzate all'interno di una communitï¿½ o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e  puï¿½ agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le proprietï¿½ di SKOS. In particolare, `<http://www.w3.org/2004/02/skos/core#prefLabel>` per il nome principale (possibilmente un nome legalmente riconosciuto)ï¿½, `<http://www.w3.org/2004/02/skos/core#altLabel>` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici.",
+      "fr" : "Reprï¿½sente un groupe de personnes organisï¿½es en communautï¿½ oï¿½ tout autre forme de structure sociale, commerciale ou politique. Le groupe a un but commun ou une raison d'ï¿½tre qui va au-delï¿½ de la somme des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations sont souvent dï¿½composables en structures hiï¿½rarchisï¿½es. Il est recommandï¿½ que des labels lexicaux SKOS soient utilisï¿½s pour nommer l'Organisation. En particulier `<http://www.w3.org/2004/02/skos/core#prefLabel>` pour le nom principal (en gï¿½nï¿½ral le nom lï¿½gal), `<http://www.w3.org/2004/02/skos/core#altLabel>` pour les noms alternatifs (marques, sigles, appellations familiï¿½res) et `skos:notation` pour indiquer un code provenant d'une liste de code.",
+      "es" : "Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o polï¿½tica. Dicho grupo tiene un objetivo o motivo comï¿½n para su existencia que va mï¿½s allï¿½ del conjunto de personas que lo forman y que puede actuar como ï¿½agenteï¿½. A menudo las organizaciones se pueden agrupar en estructuras jerï¿½rquicas. Se recomienda el uso de etiquetas de SKOS para denominar a cada ï¿½organizaciï¿½nï¿½. En concreto, `<http://www.w3.org/2004/02/skos/core#prefLabel>` para la denominaciï¿½n principal o recomendada (aquella reconocida legalmente, siempre que sea posible), `<http://www.w3.org/2004/02/skos/core#altLabel>` para denominaciones alternativas (nombre comercial, sigla, denominaciï¿½n por la que se conoce a la organizaciï¿½n coloquialmente) y `skos:notation` para referirse al cï¿½digo que identifique a la organizaciï¿½n en una lista de cï¿½digos. Denominaciones alternativas: _colectivo_ _corporaciï¿½n_ _grupo_"
     },
     "attributes" : [ "external" ],
     "id" : "315",
@@ -18793,7 +18793,7 @@
       "en" : "Vehicle Type"
     },
     "comment" : {
-      "en" : "A vehicle type that has been authorized to operate on the EU railway infrastructure. Type means a vehicle type defining \nthe basic design characteristics of the vehicle as covered by a type or design examination certificate described in the relevant verification module. \n\nBasic design characteristics means the parameters that are used to identify the vehicle type as specified in the issued vehicle type authorisation \nand recorded in the European Register of Authorised Vehicle Types (‘ERATV’).\n\nThe above mentioned certificate should be documented using era:certificate.\n"
+      "en" : "A vehicle type that has been authorized to operate on the EU railway infrastructure. Type means a vehicle type defining \nthe basic design characteristics of the vehicle as covered by a type or design examination certificate described in the relevant verification module. \n\nBasic design characteristics means the parameters that are used to identify the vehicle type as specified in the issued vehicle type authorisation \nand recorded in the European Register of Authorised Vehicle Types (ï¿½ERATVï¿½).\n\nThe above mentioned certificate should be documented using era:certificate.\n"
     },
     "id" : "162"
   }, {
@@ -18916,7 +18916,7 @@
       }, {
         "identifier" : "definition",
         "language" : "es",
-        "value" : "Una entidad temporal con una extensión o duración.",
+        "value" : "Una entidad temporal con una extensiï¿½n o duraciï¿½n.",
         "type" : "label"
       } ]
     },
@@ -18928,7 +18928,7 @@
     "subClasses" : [ "241" ],
     "comment" : {
       "en" : "A temporal entity with an extent or duration",
-      "es" : "Una entidad temporal con una extensión o duración."
+      "es" : "Una entidad temporal con una extensiï¿½n o duraciï¿½n."
     },
     "attributes" : [ "external" ],
     "id" : "1952",
@@ -28009,7 +28009,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Since GPRS can be used for ETCS, indicate in which areas it is implemented (e.g: whole section, only between two signals, at the station…)",
+        "value" : "Since GPRS can be used for ETCS, indicate in which areas it is implemented (e.g: whole section, only between two signals, at the stationï¿½)",
         "type" : "label"
       } ]
     },
@@ -34578,7 +34578,7 @@
     },
     "domain" : "162",
     "comment" : {
-      "en" : "Maximum train deceleration given in m/s²."
+      "en" : "Maximum train deceleration given in m/sï¿½."
     },
     "attributes" : [ "datatype" ],
     "id" : "695"
@@ -40356,7 +40356,7 @@
     "baseIri" : "http://data.europa.eu/949",
     "range" : "28",
     "description" : {
-      "en" : "The Values \"Not defined\" or \"ESC-EU-0\" should not be combined with other values.\n\nFor application in CCS Onboard:\nThe vehicles are considered compatible with the infrastructure for this parameter, if their parameter value matches any of the values declared on the trackside. \n\nFor application in CCS Trackside:\nThe Infrastructure Manager is responsible for defining the ESC type(s). All sections of the Union network which require the same set of checks for the demonstration of ESC shall have the same ESC type.\n\nSee: TSI CCS, Appendix A, Table A 1, 4.2.17 a.\nThe list of ESC Types is published and maintained by the European Union Agency for Railways in the technical document ‘ESC/RSC technical document, TD/011REC1028’. \nThe Agency shall assess the checks unless they have been assessed by a NoBo as required in Table 6.3 row 10. \nThe assessment by the Agency shall be done within 2 months of receipt thereof, unless a longer period is agreed between the Agency and the Infrastructure Manager but not exceeding 4 months in total. \nThe technical document will be updated within 10 working days after positive assessment.\n\nThe ESC Types shall only be used when published with status ‘Valid’ in the Agency Technical document referred above."
+      "en" : "The Values \"Not defined\" or \"ESC-EU-0\" should not be combined with other values.\n\nFor application in CCS Onboard:\nThe vehicles are considered compatible with the infrastructure for this parameter, if their parameter value matches any of the values declared on the trackside. \n\nFor application in CCS Trackside:\nThe Infrastructure Manager is responsible for defining the ESC type(s). All sections of the Union network which require the same set of checks for the demonstration of ESC shall have the same ESC type.\n\nSee: TSI CCS, Appendix A, Table A 1, 4.2.17 a.\nThe list of ESC Types is published and maintained by the European Union Agency for Railways in the technical document ï¿½ESC/RSC technical document, TD/011REC1028ï¿½. \nThe Agency shall assess the checks unless they have been assessed by a NoBo as required in Table 6.3 row 10. \nThe assessment by the Agency shall be done within 2 months of receipt thereof, unless a longer period is agreed between the Agency and the Infrastructure Manager but not exceeding 4 months in total. \nThe technical document will be updated within 10 working days after positive assessment.\n\nThe ESC Types shall only be used when published with status ï¿½Validï¿½ in the Agency Technical document referred above."
     },
     "annotations" : {
       "isDefinedBy" : [ {
@@ -41453,7 +41453,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Format: [NNF], with N a decimal number (0÷9), [NNF] must be divisible by 5, so F=(0|5), max. `600`.\n\nSee: TSI CCS (Subset-026, Chapter 7. 7.5.1.161)",
+        "value" : "Format: [NNF], with N a decimal number (0ï¿½9), [NNF] must be divisible by 5, so F=(0|5), max. `600`.\n\nSee: TSI CCS (Subset-026, Chapter 7. 7.5.1.161)",
         "type" : "label"
       } ]
     },
@@ -42665,7 +42665,7 @@
     "maxCardinality" : "1",
     "domain" : "1223",
     "comment" : {
-      "en" : "Axle load category (The values allocated below correspond to a list of increasing axle load categories (i.e. B1 > HS17, B2 > B1, D2 > C4, â¦.etc) and it is used by the on-board equipment to compare its axle load category with the axle load category sent by trackside.For the underlying meaning of the axle load categories listed below (with the exception of HS17) refer to CR INF TSI.The category HS17 (axle load <= 17t) corresponds to a static load per axle only, as specified in HS RST TSI clause 4.2.3.2. The introduction of this artefact is necessary to ensure backward compatibility, without any negative performance impact, in case ASPs are used on lines operated with system version X = 1)"
+      "en" : "Axle load category (The values allocated below correspond to a list of increasing axle load categories (i.e. B1 > HS17, B2 > B1, D2 > C4, ï¿½.etc) and it is used by the on-board equipment to compare its axle load category with the axle load category sent by trackside.For the underlying meaning of the axle load categories listed below (with the exception of HS17) refer to CR INF TSI.The category HS17 (axle load <= 17t) corresponds to a static load per axle only, as specified in HS RST TSI clause 4.2.3.2. The introduction of this artefact is necessary to ensure backward compatibility, without any negative performance impact, in case ASPs are used on lines operated with system version X = 1)"
     },
     "attributes" : [ "object" ],
     "id" : "1222"
@@ -45871,7 +45871,7 @@
     },
     "domain" : "70",
     "comment" : {
-      "en" : "Country identifier of the traction system. It identifies the information, additional to M_VOLTAGE, required to fully define the traction system. Note that NID_CTRACTION given only if M_VOLTAGE â 0"
+      "en" : "Country identifier of the traction system. It identifies the information, additional to M_VOLTAGE, required to fully define the traction system. Note that NID_CTRACTION given only if M_VOLTAGE ï¿½ 0"
     },
     "attributes" : [ "datatype" ],
     "id" : "1367"
@@ -48957,7 +48957,7 @@
       "formatNote" : [ {
         "identifier" : "formatNote",
         "language" : "undefined",
-        "value" : "NNNN NNNN with N a decimal number (0÷9)",
+        "value" : "NNNN NNNN with N a decimal number (0ï¿½9)",
         "type" : "label"
       } ],
       "legalDeadline" : [ {
@@ -49458,7 +49458,7 @@
     },
     "domain" : "403",
     "comment" : {
-      "en" : "Aspect of âdanger for shuntingâ signal. (set to False to Stop if in SH mode, otherwise True to Go if in SH mode)"
+      "en" : "Aspect of ï¿½danger for shuntingï¿½ signal. (set to False to Stop if in SH mode, otherwise True to Go if in SH mode)"
     },
     "attributes" : [ "datatype" ],
     "id" : "1663"
@@ -52637,7 +52637,7 @@
     },
     "domain" : "3",
     "comment" : {
-      "en" : "Speed limit allowing the driver to select the âoverrideâ function (This variable is part of the National Values)"
+      "en" : "Speed limit allowing the driver to select the ï¿½overrideï¿½ function (This variable is part of the National Values)"
     },
     "attributes" : [ "datatype" ],
     "id" : "1840"
@@ -53312,7 +53312,7 @@
     "superproperty" : [ "746" ],
     "domain" : "27",
     "comment" : {
-      "en" : "The maximum magnetic field limits allowed for axle counters (in dB µA/m) for a defined frequency band.\nIt should be provided in 3 directions."
+      "en" : "The maximum magnetic field limits allowed for axle counters (in dB ï¿½A/m) for a defined frequency band.\nIt should be provided in 3 directions."
     },
     "attributes" : [ "object", "functional" ],
     "id" : "1880"
@@ -55066,7 +55066,7 @@
     },
     "domain" : "3",
     "comment" : {
-      "en" : "Override speed limit to be supervised when theâoverrideâ function is active. (This variable is part of the National Values. Length of variable)"
+      "en" : "Override speed limit to be supervised when theï¿½overrideï¿½ function is active. (This variable is part of the National Values. Length of variable)"
     },
     "attributes" : [ "datatype" ],
     "id" : "2000"
@@ -57742,7 +57742,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Format: [NNF], with N a decimal number (0÷9), [NNF] is divisible by 5 so F=(0|5), max. `600`.\n\nSee: TSI CCS (Subset-026, chapter 7. 7.5.1.163 V_NVSUPOVTRP)",
+        "value" : "Format: [NNF], with N a decimal number (0ï¿½9), [NNF] is divisible by 5 so F=(0|5), max. `600`.\n\nSee: TSI CCS (Subset-026, chapter 7. 7.5.1.163 V_NVSUPOVTRP)",
         "type" : "label"
       } ]
     },
@@ -57995,7 +57995,7 @@
     },
     "domain" : "1226",
     "comment" : {
-      "en" : "The maximum magnetic field limits allowed for axle counters (in dB µA/m) for a defined frequency band. Direction X."
+      "en" : "The maximum magnetic field limits allowed for axle counters (in dB ï¿½A/m) for a defined frequency band. Direction X."
     },
     "attributes" : [ "datatype", "functional" ],
     "id" : "2111"
@@ -58053,7 +58053,7 @@
     },
     "domain" : "1226",
     "comment" : {
-      "en" : "The maximum magnetic field limits allowed for axle counters (in dB µA/m) for a defined frequency band. Direction Y."
+      "en" : "The maximum magnetic field limits allowed for axle counters (in dB ï¿½A/m) for a defined frequency band. Direction Y."
     },
     "attributes" : [ "datatype", "functional" ],
     "id" : "2112"
@@ -58111,7 +58111,7 @@
     },
     "domain" : "1226",
     "comment" : {
-      "en" : "The maximum magnetic field limits allowed for axle counters (in dB µA/m) for a defined frequency band. Direction Z."
+      "en" : "The maximum magnetic field limits allowed for axle counters (in dB ï¿½A/m) for a defined frequency band. Direction Z."
     },
     "attributes" : [ "datatype" ],
     "id" : "2113"
@@ -58516,46 +58516,6 @@
     "domain" : "834",
     "attributes" : [ "datatype" ],
     "id" : "2132"
-  }, {
-    "iri" : "http://data.europa.eu/949/lengthOfLinearElement",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "832",
-    "annotations" : {
-      "unitOfMeasure" : [ {
-        "identifier" : "unitOfMeasure",
-        "language" : "undefined",
-        "value" : "http://qudt.org/vocab/unit/M",
-        "type" : "iri"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2025-02-19",
-        "type" : "label"
-      } ],
-      "exp" : [ {
-        "identifier" : "exp",
-        "language" : "undefined",
-        "value" : "-3",
-        "type" : "label"
-      } ],
-      "ccsView" : [ {
-        "identifier" : "ccsView",
-        "language" : "undefined",
-        "value" : "INFRA",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "lengthOfLinearElement",
-      "en" : "LengthOfLinearElement"
-    },
-    "domain" : "379",
-    "comment" : {
-      "en" : "Distance along the LinearElement's track centre line. "
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "2133"
   }, {
     "iri" : "http://data.europa.eu/949/restrictedPath",
     "baseIri" : "http://data.europa.eu/949",
@@ -59743,7 +59703,7 @@
       }, {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Switch over between different radio systems and no communication system whilst running. Installation depends on local conditions. \n  \n  The “Indication if other radio systems in normal operation are installed line-side” is given in parameter 1.1.1.3.6.1 / SOL Track Parameter CRS_Installed”.",
+        "value" : "Switch over between different radio systems and no communication system whilst running. Installation depends on local conditions. \n  \n  The ï¿½Indication if other radio systems in normal operation are installed line-sideï¿½ is given in parameter 1.1.1.3.6.1 / SOL Track Parameter CRS_Installedï¿½.",
         "type" : "label"
       } ],
       "XMLName" : [ {
@@ -60254,7 +60214,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Information of the train access level for which the boarding aid can be used. Data is presented as the vertical difference that is overcome by the platform boarding aid in millimetres. The value “0” means that the platform is not equipped with a platform boarding aid.",
+        "value" : "Information of the train access level for which the boarding aid can be used. Data is presented as the vertical difference that is overcome by the platform boarding aid in millimetres. The value ï¿½0ï¿½ means that the platform is not equipped with a platform boarding aid.",
         "type" : "label"
       } ]
     },
@@ -61604,7 +61564,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "•\tAB: Trains can move from element A to element B.\n•\tBA: Trains can move from element B to element A.\n•\tBoth: Movement is bidirectional.\n•\tNone: No movement is allowed between the two elements.\n",
+        "value" : "ï¿½\tAB: Trains can move from element A to element B.\nï¿½\tBA: Trains can move from element B to element A.\nï¿½\tBoth: Movement is bidirectional.\nï¿½\tNone: No movement is allowed between the two elements.\n",
         "type" : "label"
       } ]
     },
@@ -62802,7 +62762,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Information on RSC data requirements per country.\n\nVehicles are considered compatible with the infrastructure regarding this parameter, if any of the values declared matches. \nIn case the value “Not Defined” or “RSC-EU-0” is used, repetitions with additional values are not expected.",
+        "value" : "Information on RSC data requirements per country.\n\nVehicles are considered compatible with the infrastructure regarding this parameter, if any of the values declared matches. \nIn case the value ï¿½Not Definedï¿½ or ï¿½RSC-EU-0ï¿½ is used, repetitions with additional values are not expected.",
         "type" : "label"
       } ],
       "XMLName" : [ {
@@ -63183,7 +63143,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Precision: [NNN], with N a decimal number (0÷9)\n\nSee: TSI CCS (Subset 26, chapter 7. 7.5.1.149 T_NVOVTRP)",
+        "value" : "Precision: [NNN], with N a decimal number (0ï¿½9)\n\nSee: TSI CCS (Subset 26, chapter 7. 7.5.1.149 T_NVOVTRP)",
         "type" : "label"
       } ],
       "XMLName" : [ {
@@ -64323,9 +64283,9 @@
     "comment" : {
       "ja" : "????????????????????????????????????",
       "en" : "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization. Many different national and international identier schemes are available. The org ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value.  Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for `skos:notation` of which this property is a specialization.",
-      "it" : "Indica un identificatore univoco per l'organizzazione, come ad esempio la partita IVA di un'azienda. Molti schemi di identificazione a livello nazionale e internazionale sono disponibili allo scopo. L'ontologia ORG è neutrale rispetto allo schema da utilizzare. Lo schema di identificazione dovrebbe essere indicato dal datatype del valore dell'identificatore. L'uso del datatype per distinguere lo schema di identificazione è coerente con le best practice per `skos:notation`, di cui questa proprietà è una specializzazione.",
-      "fr" : "Donne un identifiant, comme par exemple le numéro d'enregistrement d'une entreprise, qui peut être utilisé comme identifiant unique pour l'Organisation. De nombreux schémas nationaux et internationaux sont disponibles. Cette ontologie reste neutre par rapport au schéma utilisé. Le schéma particulier utilisé devrait être indiqué par le `datatype` de la valeur de l'identifiant. Utiliser les datatypes pour distinguer les schémas de notation est cohérent avec les bonnes pratiques pour `skos:notation` dont cette propriété est une spécialisation.",
-      "es" : "Código o identificador, como por ejemplo el CIF de una empresa, que permite identificar de forma inequívoca a una organización. Existen muchos códigos de identificación tanto nacionales como internacionales. Esta ontología no obliga al uso de ningún esquema en concreto. Los códigos de identificación utilizados en cada caso se deberían indicar mediante el uso de la propiedad “datatype” del valor del identificador. El uso de la propiedad “datatype” para especificar el esquema de notación utilizado está en consonancia con las buenas prácticas recomendadas para el uso de la propiedad `skos:notation`, de la que esta propiedad es una especialización."
+      "it" : "Indica un identificatore univoco per l'organizzazione, come ad esempio la partita IVA di un'azienda. Molti schemi di identificazione a livello nazionale e internazionale sono disponibili allo scopo. L'ontologia ORG ï¿½ neutrale rispetto allo schema da utilizzare. Lo schema di identificazione dovrebbe essere indicato dal datatype del valore dell'identificatore. L'uso del datatype per distinguere lo schema di identificazione ï¿½ coerente con le best practice per `skos:notation`, di cui questa proprietï¿½ ï¿½ una specializzazione.",
+      "fr" : "Donne un identifiant, comme par exemple le numï¿½ro d'enregistrement d'une entreprise, qui peut ï¿½tre utilisï¿½ comme identifiant unique pour l'Organisation. De nombreux schï¿½mas nationaux et internationaux sont disponibles. Cette ontologie reste neutre par rapport au schï¿½ma utilisï¿½. Le schï¿½ma particulier utilisï¿½ devrait ï¿½tre indiquï¿½ par le `datatype` de la valeur de l'identifiant. Utiliser les datatypes pour distinguer les schï¿½mas de notation est cohï¿½rent avec les bonnes pratiques pour `skos:notation` dont cette propriï¿½tï¿½ est une spï¿½cialisation.",
+      "es" : "Cï¿½digo o identificador, como por ejemplo el CIF de una empresa, que permite identificar de forma inequï¿½voca a una organizaciï¿½n. Existen muchos cï¿½digos de identificaciï¿½n tanto nacionales como internacionales. Esta ontologï¿½a no obliga al uso de ningï¿½n esquema en concreto. Los cï¿½digos de identificaciï¿½n utilizados en cada caso se deberï¿½an indicar mediante el uso de la propiedad ï¿½datatypeï¿½ del valor del identificador. El uso de la propiedad ï¿½datatypeï¿½ para especificar el esquema de notaciï¿½n utilizado estï¿½ en consonancia con las buenas prï¿½cticas recomendadas para el uso de la propiedad `skos:notation`, de la que esta propiedad es una especializaciï¿½n."
     },
     "attributes" : [ "datatype", "external" ],
     "id" : "2487"
@@ -64974,7 +64934,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "The allowed values for this property belong to a SKOS Concept Scheme. This concept scheme is temporarily non-deferenceable.\n \nInformation on RSC voice requirements per country is given in the refered document.\n\nVehicles are considered compatible with the infrastructure regarding this parameter, if any of the values declared matches. \nIn case the value “Not Defined” or “RSC-EU-0” is used, repetitions with additional values are not expected.",
+        "value" : "The allowed values for this property belong to a SKOS Concept Scheme. This concept scheme is temporarily non-deferenceable.\n \nInformation on RSC voice requirements per country is given in the refered document.\n\nVehicles are considered compatible with the infrastructure regarding this parameter, if any of the values declared matches. \nIn case the value ï¿½Not Definedï¿½ or ï¿½RSC-EU-0ï¿½ is used, repetitions with additional values are not expected.",
         "type" : "label"
       } ]
     },
@@ -67581,7 +67541,7 @@
     "maxCardinality" : "1",
     "domain" : "47",
     "comment" : {
-      "en" : "Radio subscriber number (Quoted as a 16 digit decimal number. The number is to be entered âleft adjustedâ starting with the first digit to be dialed. Padding by the special value F shall be added after the least significant digit of the number. For further information about NID_RADIO refer to SUBSET-054.)"
+      "en" : "Radio subscriber number (Quoted as a 16 digit decimal number. The number is to be entered ï¿½left adjustedï¿½ starting with the first digit to be dialed. Padding by the special value F shall be added after the least significant digit of the number. For further information about NID_RADIO refer to SUBSET-054.)"
     },
     "attributes" : [ "datatype" ],
     "id" : "2655"
@@ -68839,7 +68799,7 @@
     },
     "domain" : "915",
     "comment" : {
-      "en" : "Special/Reserved values for Traction System voltage. It indicates the voltage of the traction system installed on a specific line or respectively that can be used by an engine. The identity of the traction system is given by M_VOLTAGE and, if M_VOLTAGE â 0, by the country identifier of the traction system (NID_CTRACTION). Note that values from 6 to 15 are currently unassigned"
+      "en" : "Special/Reserved values for Traction System voltage. It indicates the voltage of the traction system installed on a specific line or respectively that can be used by an engine. The identity of the traction system is given by M_VOLTAGE and, if M_VOLTAGE ï¿½ 0, by the country identifier of the traction system (NID_CTRACTION). Note that values from 6 to 15 are currently unassigned"
     },
     "attributes" : [ "datatype" ],
     "id" : "2716"
@@ -71252,7 +71212,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Precision: [NNN], with N a decimal number (0÷9), NNN = 255 means ? seconds, so values cannot be higher.\n\nSee: TSI CCS (Subset 26, chapter 7. 7.5.1.148 T_NVCONTACT)",
+        "value" : "Precision: [NNN], with N a decimal number (0ï¿½9), NNN = 255 means ? seconds, so values cannot be higher.\n\nSee: TSI CCS (Subset 26, chapter 7. 7.5.1.148 T_NVCONTACT)",
         "type" : "label"
       } ]
     },
@@ -71458,7 +71418,7 @@
       }, {
         "identifier" : "editorialNote",
         "language" : "es",
-        "value" : "Característica arriesgada -añadida en la revisión del 2017 que no ha sido todavía utilizada de forma amplia.",
+        "value" : "Caracterï¿½stica arriesgada -aï¿½adida en la revisiï¿½n del 2017 que no ha sido todavï¿½a utilizada de forma amplia.",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -71469,7 +71429,7 @@
       }, {
         "identifier" : "definition",
         "language" : "es",
-        "value" : "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa.",
+        "value" : "Proporciona soporte a la asociaciï¿½n de una entidad temporal (instante o intervalo) a cualquier cosa.",
         "type" : "label"
       } ]
     },
@@ -71482,7 +71442,7 @@
     "subproperty" : [ "1268", "2800" ],
     "comment" : {
       "en" : "Supports the association of a temporal entity (instant or interval) to any thing",
-      "es" : "Proporciona soporte a la asociación de una entidad temporal (instante o intervalo) a cualquier cosa."
+      "es" : "Proporciona soporte a la asociaciï¿½n de una entidad temporal (instante o intervalo) a cualquier cosa."
     },
     "attributes" : [ "object", "external" ],
     "id" : "1269"
@@ -73175,7 +73135,7 @@
       "scopeNote" : [ {
         "identifier" : "scopeNote",
         "language" : "en",
-        "value" : "Value 'true' shall be selected in case there are possible severe climatic conditions to be expected, i.e. a significant amount of snow or ice is to be expected during winter and vehicle should be designed accordingly to be able to run in such conditions. (compliance to 4.2.6.1.2(3),(4) of TSI Loc&Pas required). \"N\" to be selected otherwise.\n\nNominal and severe conditions are defined at TSI Loc&Pas level, section 4.2.6.1.2, which requires that the applicant declares to which snow conditions a vehicle complies with : either \"nominal\" or \"severe\" conditions. This technical aspect is reflected in the parameter 4.3.3 \"Snow, ice and hail conditions\" of ERATV , which will provide the two possible values:\n- Nominal conditions correspond to compliance with clause 4.7 of EN 50125 as referred in the §4.2.6.1.2 (1) of TSI Loc&Pas.\nTo be noted: It is not required to precise the categorisation S1, S2 or S3 as mentioned in the EN 50125.\n\n- Severe conditions correspond to compliance with §4.2.6.1.2 (3) and (4) : the applicant designs and tests its vehicle according to the different scenarios mentioned in the TSI §4.2.6.1.2 (3) (snowdrift, powder snow, temperature gradient, etc.) and set the related provisions to achieve this as required by §4.2.6.1.2 (4) (obstacle deflector of sufficient size, effect of ice and snow on running gear and brake function, etc.).",
+        "value" : "Value 'true' shall be selected in case there are possible severe climatic conditions to be expected, i.e. a significant amount of snow or ice is to be expected during winter and vehicle should be designed accordingly to be able to run in such conditions. (compliance to 4.2.6.1.2(3),(4) of TSI Loc&Pas required). \"N\" to be selected otherwise.\n\nNominal and severe conditions are defined at TSI Loc&Pas level, section 4.2.6.1.2, which requires that the applicant declares to which snow conditions a vehicle complies with : either \"nominal\" or \"severe\" conditions. This technical aspect is reflected in the parameter 4.3.3 \"Snow, ice and hail conditions\" of ERATV , which will provide the two possible values:\n- Nominal conditions correspond to compliance with clause 4.7 of EN 50125 as referred in the ï¿½4.2.6.1.2 (1) of TSI Loc&Pas.\nTo be noted: It is not required to precise the categorisation S1, S2 or S3 as mentioned in the EN 50125.\n\n- Severe conditions correspond to compliance with ï¿½4.2.6.1.2 (3) and (4) : the applicant designs and tests its vehicle according to the different scenarios mentioned in the TSI ï¿½4.2.6.1.2 (3) (snowdrift, powder snow, temperature gradient, etc.) and set the related provisions to achieve this as required by ï¿½4.2.6.1.2 (4) (obstacle deflector of sufficient size, effect of ice and snow on running gear and brake function, etc.).",
         "type" : "label"
       } ],
       "XMLName" : [ {
@@ -73200,7 +73160,7 @@
     "baseIri" : "http://data.europa.eu/949",
     "range" : "28",
     "description" : {
-      "en" : "At this step, RINF does not allow to enter additional data referred to additional speed regulations and operating requirements relating to locomotives (e.g., locomotive classes and associated maximum speed) or traffic types (e.g., maximum speed of freight traffic or passenger traffic).\n\nThe load capability describes the weakest point of this track within this section of line (which is normally a bridge or other sub-track structure). It is expressed as a combination of the line category and speed permitted for trains exerting loads defined for this line category. The result of the classification process is set out in EN 15528:2021 (Annex A) and referred to in that standard as “Line Category”. \n\nIt represents the ability of the infrastructure to withstand the vertical loads imposed by vehicles on the track for regular service as a combination of Line Category with a permitted speed according to EN 15528:2021\n\nMore than one combination may be published for the same track if applicable, but it has to be done by repetition of the parameter with one value selected only – that is why ‘Y’ is given in line ‘Can be repeated’\n\nFor the following cases, it is not possible to use EN 15528:2021 categories of line classification:\n- TSI categories of line P1520 and F1520 (passenger traffic or freight traffic at any speed)\n- TSI categories of line P1600 and F1600 (passenger traffic or freight traffic at any speed)\n"
+      "en" : "At this step, RINF does not allow to enter additional data referred to additional speed regulations and operating requirements relating to locomotives (e.g., locomotive classes and associated maximum speed) or traffic types (e.g., maximum speed of freight traffic or passenger traffic).\n\nThe load capability describes the weakest point of this track within this section of line (which is normally a bridge or other sub-track structure). It is expressed as a combination of the line category and speed permitted for trains exerting loads defined for this line category. The result of the classification process is set out in EN 15528:2021 (Annex A) and referred to in that standard as ï¿½Line Categoryï¿½. \n\nIt represents the ability of the infrastructure to withstand the vertical loads imposed by vehicles on the track for regular service as a combination of Line Category with a permitted speed according to EN 15528:2021\n\nMore than one combination may be published for the same track if applicable, but it has to be done by repetition of the parameter with one value selected only ï¿½ that is why ï¿½Yï¿½ is given in line ï¿½Can be repeatedï¿½\n\nFor the following cases, it is not possible to use EN 15528:2021 categories of line classification:\n- TSI categories of line P1520 and F1520 (passenger traffic or freight traffic at any speed)\n- TSI categories of line P1600 and F1600 (passenger traffic or freight traffic at any speed)\n"
     },
     "annotations" : {
       "isDefinedBy" : [ {
@@ -86836,7 +86796,7 @@
     },
     "domain" : "601",
     "comment" : {
-      "en" : "In the case of a change in the value of a parameter, there needs to be an information on the type of the new value. The “Value type” will have different possible options: “nominal”, “planned temporary restriction”, “permanent restriction”, “planned temporary closure”."
+      "en" : "In the case of a change in the value of a parameter, there needs to be an information on the type of the new value. The ï¿½Value typeï¿½ will have different possible options: ï¿½nominalï¿½, ï¿½planned temporary restrictionï¿½, ï¿½permanent restrictionï¿½, ï¿½planned temporary closureï¿½."
     },
     "attributes" : [ "object" ],
     "id" : "3464"
@@ -86941,7 +86901,7 @@
     },
     "label" : {
       "IRI-based" : "existanceOfIndustrialRisk",
-      "en" : "Industrial risks — locations where it is dangerous for the driver to step out"
+      "en" : "Industrial risks ï¿½ locations where it is dangerous for the driver to step out"
     },
     "domain" : "1521",
     "comment" : {
@@ -94113,7 +94073,7 @@
     "baseIri" : "http://data.europa.eu/949",
     "range" : "155",
     "description" : {
-      "en" : "If not `false` (property hasEtcsRestrictionsConditions), a link to the conditions must be provided. The RU has to contact the IM to be informed about these conditions.\nThese conditions and restrictions of use are considered in section 6.4 of the CCS TSI. They should be described using the template available on Agency website (Certification and deviations – Guidelines for using the ERA template) with the following link."
+      "en" : "If not `false` (property hasEtcsRestrictionsConditions), a link to the conditions must be provided. The RU has to contact the IM to be informed about these conditions.\nThese conditions and restrictions of use are considered in section 6.4 of the CCS TSI. They should be described using the template available on Agency website (Certification and deviations ï¿½ Guidelines for using the ERA template) with the following link."
     },
     "annotations" : {
       "isDefinedBy" : [ {

@@ -14838,18 +14838,6 @@ _:genid1110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org
 <http://data.europa.eu/949/length> <http://www.w3.org/2004/02/skos/core#scopeNote> "Position of the start of the walkway:  [integer] m (from the same origin point of the kilometer post.)\nLenght of the walkway: [integer] m"@en .
 <http://data.europa.eu/949/length> <http://www.w3.org/2004/02/skos/core#scopeNote> "The length can be \n- a section of line (For operational length, use era:lengthOfSectionOfLine), \n- a tunnel (For operational length, use era:lengthOfTunnel), \n- a platform (For its usable length, use era:lengthOfPlatform), \n- a siding (For its usable length, use era:lengthOfSiding), and \n- length of other areas such as \n  - a non-stopping area (accuracy +- 10m), \n  - a walkway, \n  - an evacuation and rescue point.\n- a vehicle length."@en .
 # 
-# http://data.europa.eu/949/lengthOfLinearElement
-<http://data.europa.eu/949/lengthOfLinearElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.europa.eu/949/length> .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/LinearElement> .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://data.europa.eu/949/ccsView> "INFRA" .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://data.europa.eu/949/exp> "-3"^^<http://www.w3.org/2001/XMLSchema#int> .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://data.europa.eu/949/unitOfMeasure> <http://qudt.org/vocab/unit/M> .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://purl.org/dc/terms/created> "2025-02-19"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance along the LinearElement's track centre line. "@en .
-<http://data.europa.eu/949/lengthOfLinearElement> <http://www.w3.org/2000/01/rdf-schema#label> "LengthOfLinearElement"@en .
-# 
 # http://data.europa.eu/949/lengthOfNetLinearElement
 <http://data.europa.eu/949/lengthOfNetLinearElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/lengthOfNetLinearElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.europa.eu/949/length> .
