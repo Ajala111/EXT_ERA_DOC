@@ -1,3 +1,73 @@
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-The CCS/TMS Data Model (Control Command and Signalling/Traffic Management System) is a standardized framework aimed at enabling seamless data exchange across railway systems. The primary objective is to support interface specifications between systems. Developed under the ERJU Transversal CCS, this extension specifies data structures that are critical for various railway functions such as engineering, asset management, operational plan, train protection, on-board infrastructure, and others.</span>
+
+<h3>What to Specify</h3>
+<p>
+The primary objective of the data model is to support interface specifications between systems. There are two main ways to establish interfaces:
+</p>
+<ul>
+  <li>Defining the data stream "on the wire" (including airgap interfaces)</li>
+  <li>Defining function calls in specific programming languages (e.g., within architectures based on standards like OMG CORBA, OMG DDS, etc.)</li>
+</ul>
+<p>
+In the context of the CCS/TMS data model, the objective is to specify a part of the "data stream on the wire" for interface specifications. The reason is that programming languages, compared to data modeling, are too volatile for the railway domain. This also aligns with the goal of the CCS/TMS data model as a data structure for functional interface specifications within the System Pillar context.
+</p>
+<p>
+A data exchange protocol based on a continuous data stream (e.g., TCP) typically consists of two parts:
+</p>
+<ol>
+  <li>A frame defining limits of single messages inside a continuous data stream.</li>
+  <li>An object specification inside a frame.</li>
+</ol>
+<p>
+Since frame definitions depend on the communication technology, middleware, and architecture group responsible for protocol specifications, this document focuses only on the second point: <strong>"definition of objects inside a frame for the 'on the wire' data stream."</strong>
+</p>
+<p>
+In other words, the objective of this document is to define serializable data structures together with their mapping and representation in a sequence of bytes, often referred to as a "data schema."
+</p>
+<p>
+Consequently, TCCS SD1 specifies not only a data model but also its (automatic) translation into data schemata for practical usage on standardized interfaces for engineering/configuration (SMI) or operation (SCI). To achieve this, a formal description is applied to avoid ambiguities and allow automatic transformation for different use cases, as described in the following chapters.
+</p>
+
+<h3>How to Specify</h3>
+<p>
+The freedom in the definition of the data model is strongly limited by the data schema it should support (e.g., if a schema does not support inheritance, the data model should not use it). The question is: which schemata should the data model support? 
+</p>
+<p>
+As interface specifications are a long-living and innovative process, we cannot limit ourselves to only one schema (e.g., XML), but rather a schema class containing different schemata depending on specific interface requirements, such as available bandwidth.
+</p>
+<p>
+In this context, three classes of data schemata should be considered:
+</p>
+<ul>
+  <li>
+    <strong>Class 1:</strong> Pure data specification (e.g., OMG CORBA, ASN.1, all ETCS telegrams), where each bit on the wire contains object information.
+    <br><strong>Limitation:</strong> Attributes with primitive data types (boolean, int, double) cannot be optional. An optional boolean should be represented as an enumeration with values true/false/unknown.
+  </li>
+  <li>
+    <strong>Class 2:</strong> Schemata include static meta information, allowing separation of each attribute of the object. This supports backward compatibility, enabling outdated client applications to ignore/skip new ("unknown") object attributes. Examples include JSON, XML (subset), and Protobuf.
+    <br><strong>Limitation:</strong> The data model must avoid polymorphism by inheritance.
+  </li>
+  <li>
+    <strong>Class 3:</strong> Schemata include dynamic meta information about attribute types, allowing data polymorphism on the wire. Examples include XML and ZeroC.
+    <br><strong>Limitation:</strong> Dynamic meta data is not well supported by binary schemata (e.g., Protobuf). In JSON, this often uses an "ANY"-object approach, which is not yet standardized and can be a source of errors.
+  </li>
+</ul>
+
+<p>
+For this project, it was decided to cover <strong>schemata with static meta information (Class 2)</strong> for the following reasons:
+</p>
+<ul>
+  <li>Main interfaces would have sufficient bandwidth to support static meta information, despite increasing message sizes by 10–500% depending on the selected schema (Protobuf/XML) and object structure.</li>
+  <li>Backward compatibility allows evolutionary deployment of schema versions. Only major version changes would require a reset of all communication partners using the modified schema.</li>
+  <li>The limitation regarding polymorphism by inheritance can be addressed through the applied modeling methodology described in section 4.2 – Model design decisions.</li>
+  <li>Pure data specification (Class 1) is insufficient, as schemata must be regenerated with every new version. Backward compatibility is only partial.</li>
+  <li>Dynamic meta data (Class 3) is not well supported, especially by binary formats, and introduces ambiguity.</li>
+</ul>
+
+<p>
+Therefore, the objective of the data model is to enable the generation of schemata that include static meta information. Specifically, this means that the data model should be mappable to <strong>JSON, XML (subset), Protobuf, and OPC-UA (subset)</strong> schemata.
+</p>
+<p>
+Another key use case is the generation of RDF representations, enabling integration with semantic ontologies such as the <a href="https://data-interop.era.europa.eu/era-vocabulary/" target="_blank">ERA vocabulary</a> and leveraging Linked Data facilities. This allows transformation of the SD data model into other external data models, such as IFC.
+</p>
+

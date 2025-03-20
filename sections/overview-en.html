@@ -1,8 +1,10 @@
-<h2 id="overv" class="list">Extended ERA Ontology (Draft): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="overv" class="list">Extended ERA Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+<ul xmlns:era="http://data.europa.eu/949/"
+    xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
@@ -22,10 +24,20 @@ This ontology has the following classes and properties.</span>
       <a href="#VehicleKeeper" title="http://data.europa.eu/949/VehicleKeeper">(deprecated) Vehicle Keeper</a>
    </li>
    <li>
+      <a href="#AbsolutePosition" title="http://data.europa.eu/949/AbsolutePosition">Absolute Position</a>
+   </li>
+   <li>
       <a href="#AdditionalEventTime" title="http://data.europa.eu/949/AdditionalEventTime">Additional Event Time</a>
    </li>
    <li>
       <a href="#AdditionalTrainData" title="http://data.europa.eu/949/AdditionalTrainData">Additional Train Data</a>
+   </li>
+   <li>
+      <a href="#AdjacentSegmentProfile"
+         title="http://data.europa.eu/949/AdjacentSegmentProfile">AdjacentSegmentProfile</a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">Agent</a>
    </li>
    <li>
       <a href="#AllocationSection" title="http://data.europa.eu/949/AllocationSection">Allocation Section</a>
@@ -38,6 +50,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#AtoTSContactInfo" title="http://data.europa.eu/949/AtoTSContactInfo">ATO-TS Contact Info</a>
+   </li>
+   <li>
+      <a href="#Attitude" title="http://data.europa.eu/949/Attitude">Attitude</a>
    </li>
    <li>
       <a href="#AuxiliarySwitch" title="http://data.europa.eu/949/AuxiliarySwitch">Auxiliary Switch</a>
@@ -93,6 +108,9 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
    </li>
    <li>
+      <a href="#ContactInformation" title="http://data.europa.eu/949/ContactInformation">Contact Information</a>
+   </li>
+   <li>
       <a href="#ContactLineSystem" title="http://data.europa.eu/949/ContactLineSystem">Contact Line System</a>
    </li>
    <li>
@@ -136,6 +154,26 @@ This ontology has the following classes and properties.</span>
       <a href="#Derailer" title="http://data.europa.eu/949/Derailer">Derailer</a>
    </li>
    <li>
+      <a href="#DigitalRegisterHandshakeAcknowledgement"
+         title="http://data.europa.eu/949/DigitalRegisterHandshakeAcknowledgement">DigitalRegisterHandshakeAcknowledgement</a>
+   </li>
+   <li>
+      <a href="#DigitalRegisterHandshakeRejection"
+         title="http://data.europa.eu/949/DigitalRegisterHandshakeRejection">DigitalRegisterHandshakeRejection</a>
+   </li>
+   <li>
+      <a href="#DigitalRegisterHandshakeRequest"
+         title="http://data.europa.eu/949/DigitalRegisterHandshakeRequest">DigitalRegisterHandshakeRequest</a>
+   </li>
+   <li>
+      <a href="#DigitalRegisterSessionTermination"
+         title="http://data.europa.eu/949/DigitalRegisterSessionTermination">DigitalRegisterSessionTermination</a>
+   </li>
+   <li>
+      <a href="#DigitalRegisterSessionTerminationRequest"
+         title="http://data.europa.eu/949/DigitalRegisterSessionTerminationRequest">DigitalRegisterSessionTerminationRequest</a>
+   </li>
+   <li>
       <a href="#DLTrackCond" title="http://data.europa.eu/949/DLTrackCond">DL Track Condition</a>
    </li>
    <li>
@@ -166,6 +204,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#DriveProtectionSectionGroup"
          title="http://data.europa.eu/949/DriveProtectionSectionGroup">Drive Protection Section Group</a>
+   </li>
+   <li>
+      <a href="#DrivingProfile" title="http://data.europa.eu/949/DrivingProfile">Driving Profile</a>
    </li>
    <li>
       <a href="#EngArea" title="http://data.europa.eu/949/EngArea">Engineering Area</a>
@@ -346,9 +387,6 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/FieldObjectController">Field Object Controller</a>
    </li>
    <li>
-      <a href="#FlankProtection" title="http://data.europa.eu/949/FlankProtection">Flank Protection</a>
-   </li>
-   <li>
       <a href="#FoulingPoint" title="http://data.europa.eu/949/FoulingPoint">Fouling Point</a>
    </li>
    <li>
@@ -378,6 +416,9 @@ This ontology has the following classes and properties.</span>
          title="http://www.opengis.net/ont/sf#GeometryCollection">Geometry Collection</a>
    </li>
    <li>
+      <a href="#GeometryProfile" title="http://data.europa.eu/949/GeometryProfile">Geometry Profile</a>
+   </li>
+   <li>
       <a href="#GradientChange" title="http://data.europa.eu/949/GradientChange">Gradient Change</a>
    </li>
    <li>
@@ -391,6 +432,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#HorizontalTransition" title="http://data.europa.eu/949/HorizontalTransition">Horizontal Transition</a>
+   </li>
+   <li>
+      <a href="#HABD" title="http://data.europa.eu/949/HABD">Hot Axle Box Detector</a>
    </li>
    <li>
       <a href="#Infrastructure" title="http://data.europa.eu/949/Infrastructure">Infrastructure</a>
@@ -447,8 +491,30 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/LinearPositioningSystemCoordinate">Linear Positioning System Coordinate</a>
    </li>
    <li>
+      <a href="#LinearElementCoordinate"
+         title="http://data.europa.eu/949/LinearElementCoordinate">LinearElementCoordinate</a>
+   </li>
+   <li>
+      <a href="#LinearElementGauge" title="http://data.europa.eu/949/LinearElementGauge">LinearElementGauge</a>
+   </li>
+   <li>
       <a href="#LinearElementGeometry"
          title="http://data.europa.eu/949/LinearElementGeometry">LinearElementGeometry</a>
+   </li>
+   <li>
+      <a href="#LinearElementKmSigns" title="http://data.europa.eu/949/LinearElementKmSigns">LinearElementKmSigns</a>
+   </li>
+   <li>
+      <a href="#LinearElementLoadingGauge"
+         title="http://data.europa.eu/949/LinearElementLoadingGauge">LinearElementLoadingGauge</a>
+   </li>
+   <li>
+      <a href="#LinearElementProjection"
+         title="http://data.europa.eu/949/LinearElementProjection">LinearElementProjection</a>
+   </li>
+   <li>
+      <a href="#LinearElementSpeedProfile"
+         title="http://data.europa.eu/949/LinearElementSpeedProfile">LinearElementSpeedProfile</a>
    </li>
    <li>
       <a href="#LinesideDistanceIndication"
@@ -467,10 +533,16 @@ This ontology has the following classes and properties.</span>
       <a href="#LXStatus" title="http://data.europa.eu/949/LXStatus">LX Status</a>
    </li>
    <li>
+      <a href="#Map" title="http://data.europa.eu/949/Map">Map</a>
+   </li>
+   <li>
       <a href="#MapArea" title="http://data.europa.eu/949/MapArea">Map Area</a>
    </li>
    <li>
       <a href="#MapMgmt" title="http://data.europa.eu/949/MapMgmt">Map Mgmt</a>
+   </li>
+   <li>
+      <a href="#MapAreaRequest" title="http://data.europa.eu/949/MapAreaRequest">MapAreaRequest</a>
    </li>
    <li>
       <a href="#MaximumMagneticField" title="http://data.europa.eu/949/MaximumMagneticField">Maximum magnetic field</a>
@@ -603,9 +675,6 @@ This ontology has the following classes and properties.</span>
       <a href="#Orientation" title="http://data.europa.eu/949/Orientation">Orientation</a>
    </li>
    <li>
-      <a href="#Overlap" title="http://data.europa.eu/949/Overlap">Overlap</a>
-   </li>
-   <li>
       <a href="#Packet" title="http://data.europa.eu/949/Packet">Packet</a>
    </li>
    <li>
@@ -695,11 +764,14 @@ This ontology has the following classes and properties.</span>
       <a href="#ReferenceBorderPoint" title="http://data.europa.eu/949/ReferenceBorderPoint">Reference border point</a>
    </li>
    <li>
+      <a href="#RelativePosition" title="http://data.europa.eu/949/RelativePosition">Relative Position</a>
+   </li>
+   <li>
       <a href="#RaisedPantographsDistanceAndSpeed"
          title="http://data.europa.eu/949/RaisedPantographsDistanceAndSpeed">Requirements for number of raised pantographs and spacing between them, at the given speed</a>
    </li>
    <li>
-      <a href="#RestrictedAspects" title="http://data.europa.eu/949/RestrictedAspects">Restricted Aspects</a>
+      <a href="#RestrictedAspect" title="http://data.europa.eu/949/RestrictedAspect">Restricted Aspect</a>
    </li>
    <li>
       <a href="#RestrictionArea" title="http://data.europa.eu/949/RestrictionArea">Restriction Area</a>
@@ -713,15 +785,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#RestrictionEventExecutionReport"
          title="http://data.europa.eu/949/RestrictionEventExecutionReport">Restriction Event Execution Report</a>
-   </li>
-   <li>
-      <a href="#Route" title="http://data.europa.eu/949/Route">Route</a>
-   </li>
-   <li>
-      <a href="#RouteBody" title="http://data.europa.eu/949/RouteBody">Route Body</a>
-   </li>
-   <li>
-      <a href="#RouteConflict" title="http://data.europa.eu/949/RouteConflict">Route Conflict</a>
    </li>
    <li>
       <a href="#RouteSuitability" title="http://data.europa.eu/949/RouteSuitability">Route Suitability</a>
@@ -744,10 +807,23 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/FrenchTrainDetectionSystemLimitation">Section with train detection limitation</a>
    </li>
    <li>
+      <a href="#SegmentDescription" title="http://data.europa.eu/949/SegmentDescription">Segment Description</a>
+   </li>
+   <li>
       <a href="#SegmentProfile" title="http://data.europa.eu/949/SegmentProfile">Segment Profile</a>
    </li>
    <li>
       <a href="#SegmentSection" title="http://data.europa.eu/949/SegmentSection">Segment Section</a>
+   </li>
+   <li>
+      <a href="#SegmentProfileList" title="http://data.europa.eu/949/SegmentProfileList">SegmentProfileList</a>
+   </li>
+   <li>
+      <a href="#SegmentProfilePacket" title="http://data.europa.eu/949/SegmentProfilePacket">SegmentProfilePacket</a>
+   </li>
+   <li>
+      <a href="#SegmentProfileRequest"
+         title="http://data.europa.eu/949/SegmentProfileRequest">SegmentProfileRequest</a>
    </li>
    <li>
       <a href="#Siding" title="http://data.europa.eu/949/Siding">Siding</a>
@@ -891,24 +967,7 @@ This ontology has the following classes and properties.</span>
       <a href="#TvpSection" title="http://data.europa.eu/949/TvpSection">Track Vacancy Proving Section</a>
    </li>
    <li>
-      <a href="#TrackEdgeCoordinate" title="http://data.europa.eu/949/TrackEdgeCoordinate">TrackEdge Coordinate</a>
-   </li>
-   <li>
-      <a href="#TrackEdgeGauge" title="http://data.europa.eu/949/TrackEdgeGauge">TrackEdge Gauge</a>
-   </li>
-   <li>
-      <a href="#TrackEdgeKmSigns" title="http://data.europa.eu/949/TrackEdgeKmSigns">TrackEdge KmSigns</a>
-   </li>
-   <li>
-      <a href="#TrackEdgeLoadingGauge"
-         title="http://data.europa.eu/949/TrackEdgeLoadingGauge">TrackEdge Loading Gauge</a>
-   </li>
-   <li>
-      <a href="#TrackEdgeProjection" title="http://data.europa.eu/949/TrackEdgeProjection">TrackEdge Projection</a>
-   </li>
-   <li>
-      <a href="#TrackEdgeSpeedProfile"
-         title="http://data.europa.eu/949/TrackEdgeSpeedProfile">TrackEdge Speed Profile</a>
+      <a href="#TrackTrainHeader" title="http://data.europa.eu/949/TrackTrainHeader">TrackTrainHeader</a>
    </li>
    <li>
       <a href="#TractionSystem" title="http://data.europa.eu/949/TractionSystem">Traction System</a>
@@ -949,9 +1008,6 @@ This ontology has the following classes and properties.</span>
       <a href="#TrainUnitReportPE" title="http://data.europa.eu/949/TrainUnitReportPE">Train Unit Report PE</a>
    </li>
    <li>
-      <a href="#Transit" title="http://data.europa.eu/949/Transit">Transit</a>
-   </li>
-   <li>
       <a href="#TravelTimeMeasurementPoint"
          title="http://data.europa.eu/949/TravelTimeMeasurementPoint">Travel Time Measurement Point</a>
    </li>
@@ -966,9 +1022,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#UnprotectedLX" title="http://data.europa.eu/949/UnprotectedLX">Unprotected Level-Crossing</a>
-   </li>
-   <li>
-      <a href="#VacantSection" title="http://data.europa.eu/949/VacantSection">Vacant Section</a>
    </li>
    <li>
       <a href="#Vehicle" title="http://data.europa.eu/949/Vehicle">Vehicle</a>
@@ -1007,7 +1060,9 @@ This ontology has the following classes and properties.</span>
       <a href="#WarningMeasureEventExecutionReport"
          title="http://data.europa.eu/949/WarningMeasureEventExecutionReport">Warning Measure Event Execution Report</a>
    </li>
-</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+</ul><h4>Object Properties</h4><ul xmlns:era="http://data.europa.eu/949/"
+    xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
@@ -1015,6 +1070,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#lineReference" title="http://data.europa.eu/949/lineReference">(deprecated) Railway location of an infrastructure object</a>
+   </li>
+   <li>
+      <a href="#absolutePosition" title="http://data.europa.eu/949/absolutePosition">Absolute Position</a>
    </li>
    <li>
       <a href="#accelerationLevelCrossing"
@@ -1044,6 +1102,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#adhesionIndependentBrakeState"
          title="http://data.europa.eu/949/adhesionIndependentBrakeState">Adhesion Independent Brake State</a>
+   </li>
+   <li>
+      <a href="#adjacentSegmentProfiles"
+         title="http://data.europa.eu/949/adjacentSegmentProfiles">AdjacentSegmentProfiles</a>
    </li>
    <li>
       <a href="#aggregates" title="http://data.europa.eu/949/aggregates">aggregates</a>
@@ -1079,6 +1141,9 @@ This ontology has the following classes and properties.</span>
       <a href="#areaReference" title="http://data.europa.eu/949/areaReference">Area Reference</a>
    </li>
    <li>
+      <a href="#areaOfControl" title="http://data.europa.eu/949/areaOfControl">AreaOfControl</a>
+   </li>
+   <li>
       <a href="#arrivalReport" title="http://data.europa.eu/949/arrivalReport">Arrival Report</a>
    </li>
    <li>
@@ -1099,6 +1164,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#atotsContactInfo" title="http://data.europa.eu/949/atotsContactInfo">ATO-TS Contact Info</a>
+   </li>
+   <li>
+      <a href="#attitudes" title="http://data.europa.eu/949/attitudes">Attitudes</a>
    </li>
    <li>
       <a href="#authorizedCountry" title="http://data.europa.eu/949/authorizedCountry">authorized country</a>
@@ -1155,6 +1223,9 @@ This ontology has the following classes and properties.</span>
       <a href="#belongsTo" title="http://data.europa.eu/949/belongsTo">belongs to</a>
    </li>
    <li>
+      <a href="#belongsToAoc" title="http://data.europa.eu/949/belongsToAoc">BelongsToAoc</a>
+   </li>
+   <li>
       <a href="#bootingLastReason" title="http://data.europa.eu/949/bootingLastReason">Booting Last Reason</a>
    </li>
    <li>
@@ -1178,6 +1249,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#bridges" title="http://data.europa.eu/949/bridges">Bridges</a>
+   </li>
+   <li>
+      <a href="#bufferStop" title="http://data.europa.eu/949/bufferStop">Buffer Stop</a>
    </li>
    <li>
       <a href="#bufferStopAccuracies" title="http://data.europa.eu/949/bufferStopAccuracies">Buffer Stop Accuracies</a>
@@ -1238,7 +1312,10 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/conditionsUseReflectivePlates">Conditions for use of reflective plates</a>
    </li>
    <li>
-      <a href="#conflicts" title="http://data.europa.eu/949/conflicts">Conflicts</a>
+      <a href="#connectedTo" title="http://data.europa.eu/949/connectedTo">connected to</a>
+   </li>
+   <li>
+      <a href="#contactInformation" title="http://data.europa.eu/949/contactInformation">Contact Information</a>
    </li>
    <li>
       <a href="#contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
@@ -1269,9 +1346,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#correctionFactors" title="http://data.europa.eu/949/correctionFactors">Correction Factors</a>
-   </li>
-   <li>
-      <a href="#countUpDir" title="http://data.europa.eu/949/countUpDir">Count-up Direction</a>
    </li>
    <li>
       <a href="#countryBalises" title="http://data.europa.eu/949/countryBalises">Country Balises</a>
@@ -1329,14 +1403,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#ccsSubsystemDeclarationsVerificationTrackObjParameter"
          title="http://data.europa.eu/949/ccsSubsystemDeclarationsVerificationTrackObjParameter">Declarations of verification for track</a>
-   </li>
-   <li>
-      <a href="#energySubsystemDeclarationsVerificationTrackObjParameter"
-         title="http://data.europa.eu/949/energySubsystemDeclarationsVerificationTrackObjParameter">Declarations of verification for track</a>
-   </li>
-   <li>
-      <a href="#infraSubsystemDeclarationsVerificationTrackObjParameter"
-         title="http://data.europa.eu/949/infraSubsystemDeclarationsVerificationTrackObjParameter">Declarations of verification for track</a>
    </li>
    <li>
       <a href="#defaultSleepersType" title="http://data.europa.eu/949/defaultSleepersType">Default Sleepers Type</a>
@@ -1446,11 +1512,17 @@ This ontology has the following classes and properties.</span>
       <a href="#dpsStates" title="http://data.europa.eu/949/dpsStates">DPS States</a>
    </li>
    <li>
+      <a href="#dpsgState" title="http://data.europa.eu/949/dpsgState">DPSG State</a>
+   </li>
+   <li>
       <a href="#driveProtectionSections"
          title="http://data.europa.eu/949/driveProtectionSections">Drive Protection Sections</a>
    </li>
    <li>
       <a href="#drivingMode" title="http://data.europa.eu/949/drivingMode">Driving Mode</a>
+   </li>
+   <li>
+      <a href="#drivingProfile" title="http://data.europa.eu/949/drivingProfile">Driving Profile</a>
    </li>
    <li>
       <a href="#dynamicBrakeForceInhibitions"
@@ -1501,9 +1573,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#errorCorrectionsOnboard"
          title="http://data.europa.eu/949/errorCorrectionsOnboard">Error corrections required for the on-board ETCS, GSM-R and/or ATO function</a>
-   </li>
-   <li>
-      <a href="#etcs" title="http://data.europa.eu/949/etcs">ETCS</a>
    </li>
    <li>
       <a href="#etcsBaseline" title="http://data.europa.eu/949/etcsBaseline">ETCS baseline</a>
@@ -1585,13 +1654,6 @@ This ontology has the following classes and properties.</span>
       <a href="#fireSafetyCategory" title="http://data.europa.eu/949/fireSafetyCategory">Fire safety category</a>
    </li>
    <li>
-      <a href="#flankProtections" title="http://data.europa.eu/949/flankProtections">Flank Protections</a>
-   </li>
-   <li>
-      <a href="#flankProtectionVacantSections"
-         title="http://data.europa.eu/949/flankProtectionVacantSections">FlankProtectionVacantSections</a>
-   </li>
-   <li>
       <a href="#foulingPoints" title="http://data.europa.eu/949/foulingPoints">Fouling Points</a>
    </li>
    <li>
@@ -1618,6 +1680,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#geometryAreas" title="http://data.europa.eu/949/geometryAreas">Geometry Areas</a>
+   </li>
+   <li>
+      <a href="#geometryProfile" title="http://data.europa.eu/949/geometryProfile">Geometry Profile</a>
    </li>
    <li>
       <a href="#gradientChanges" title="http://data.europa.eu/949/gradientChanges">Gradient Changes</a>
@@ -1677,9 +1742,6 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/healthSafetyAndEnvironmentObjParameter">Health, safety and environment</a>
    </li>
    <li>
-      <a href="#height" title="http://data.europa.eu/949/height">Height</a>
-   </li>
-   <li>
       <a href="#platformHeight" title="http://data.europa.eu/949/platformHeight">Height of platform</a>
    </li>
    <li>
@@ -1694,6 +1756,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#horizontalSegmentTransition"
          title="http://data.europa.eu/949/horizontalSegmentTransition">HorizontalSegmentTransition</a>
+   </li>
+   <li>
+      <a href="#tracksideHabd" title="http://data.europa.eu/949/tracksideHabd">hot axle box detector (HABD)</a>
    </li>
    <li>
       <a href="#inCountry" title="http://data.europa.eu/949/inCountry">In country</a>
@@ -1746,10 +1811,13 @@ This ontology has the following classes and properties.</span>
       <a href="#kmAreas" title="http://data.europa.eu/949/kmAreas">Km Areas</a>
    </li>
    <li>
-      <a href="#kmReferenceMarker" title="http://data.europa.eu/949/kmReferenceMarker">Km Reference Marker</a>
+      <a href="#kmPost" title="http://data.europa.eu/949/kmPost">km post for reference</a>
    </li>
    <li>
       <a href="#levelCrossing" title="http://data.europa.eu/949/levelCrossing">Level Crossing</a>
+   </li>
+   <li>
+      <a href="#lx_Status" title="http://data.europa.eu/949/lx_Status">Level Crossing Status</a>
    </li>
    <li>
       <a href="#levelCrossings" title="http://data.europa.eu/949/levelCrossings">Level Crossings</a>
@@ -1783,14 +1851,37 @@ This ontology has the following classes and properties.</span>
       <a href="#linearReference" title="http://data.europa.eu/949/linearReference">Linear Reference</a>
    </li>
    <li>
+      <a href="#linearElementCoordinates"
+         title="http://data.europa.eu/949/linearElementCoordinates">LinearElementCoordinates</a>
+   </li>
+   <li>
+      <a href="#linearElementGauges" title="http://data.europa.eu/949/linearElementGauges">LinearElementGauges</a>
+   </li>
+   <li>
       <a href="#linearElementGeometries"
          title="http://data.europa.eu/949/linearElementGeometries">LinearElementGeometries</a>
+   </li>
+   <li>
+      <a href="#linearElementKmSigns" title="http://data.europa.eu/949/linearElementKmSigns">LinearElementKmSigns</a>
+   </li>
+   <li>
+      <a href="#linearElementLoadingGauges"
+         title="http://data.europa.eu/949/linearElementLoadingGauges">LinearElementLoadingGauges</a>
+   </li>
+   <li>
+      <a href="#linearElementProjections"
+         title="http://data.europa.eu/949/linearElementProjections">LinearElementProjections</a>
    </li>
    <li>
       <a href="#linearElementSection" title="http://data.europa.eu/949/linearElementSection">LinearElementSection</a>
    </li>
    <li>
-      <a href="#linearElementSections" title="http://data.europa.eu/949/linearElementSections">LinearElementSections</a>
+      <a href="#linearElementSections"
+         title="http://data.europa.eu/949/linearElementSections">LinearElementSections</a>
+   </li>
+   <li>
+      <a href="#linearElementSpeedProfiles"
+         title="http://data.europa.eu/949/linearElementSpeedProfiles">LinearElementSpeedProfiles</a>
    </li>
    <li>
       <a href="#linesideDistanceIndication"
@@ -1803,6 +1894,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#linesideDistanceIndicationPositioning"
          title="http://data.europa.eu/949/linesideDistanceIndicationPositioning">Lineside distance indication positioning</a>
+   </li>
+   <li>
+      <a href="#linkType" title="http://data.europa.eu/949/linkType">Link Type</a>
    </li>
    <li>
       <a href="#linkedArea" title="http://data.europa.eu/949/linkedArea">Linked Area</a>
@@ -1847,9 +1941,6 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/locationAccuracyAreas">Location Accuracy Areas</a>
    </li>
    <li>
-      <a href="#lx_Status" title="http://data.europa.eu/949/lx_Status">Lx_Status</a>
-   </li>
-   <li>
       <a href="#m_axleLoadCat" title="http://data.europa.eu/949/m_axleLoadCat">M_AxleLoad Cat</a>
    </li>
    <li>
@@ -1865,7 +1956,7 @@ This ontology has the following classes and properties.</span>
       <a href="#m_leveltr" title="http://data.europa.eu/949/m_leveltr">M_Level TR</a>
    </li>
    <li>
-      <a href="#m_lineGuage" title="http://data.europa.eu/949/m_lineGuage">M_Line Guage</a>
+      <a href="#m_lineGauge" title="http://data.europa.eu/949/m_lineGauge">M_Line Gauge</a>
    </li>
    <li>
       <a href="#m_mamode" title="http://data.europa.eu/949/m_mamode">M_MAMODE</a>
@@ -1942,6 +2033,9 @@ This ontology has the following classes and properties.</span>
       <a href="#nVKs" title="http://data.europa.eu/949/nVKs">N_Vks</a>
    </li>
    <li>
+      <a href="#nationalBorder" title="http://data.europa.eu/949/nationalBorder">National Border</a>
+   </li>
+   <li>
       <a href="#nationalBorderAccuracies"
          title="http://data.europa.eu/949/nationalBorderAccuracies">National Border Accuracies</a>
    </li>
@@ -2016,6 +2110,9 @@ This ontology has the following classes and properties.</span>
       <a href="#onboardOperatingMode" title="http://data.europa.eu/949/onboardOperatingMode">Onboard Operating Mode</a>
    </li>
    <li>
+      <a href="#onTopoArea" title="http://data.europa.eu/949/onTopoArea">OnTopoArea</a>
+   </li>
+   <li>
       <a href="#osmClass" title="http://data.europa.eu/949/osmClass">Open street map class</a>
    </li>
    <li>
@@ -2069,6 +2166,10 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#opStart" title="http://data.europa.eu/949/opStart">Operational point at start of section of line</a>
+   </li>
+   <li>
+      <a href="#opGenericObjParameter"
+         title="http://data.europa.eu/949/opGenericObjParameter">Operational point generic information</a>
    </li>
    <li>
       <a href="#opPoints" title="http://data.europa.eu/949/opPoints">Operational Points</a>
@@ -2129,9 +2230,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#outputVoltageStatus" title="http://data.europa.eu/949/outputVoltageStatus">OutputVoltageStatus</a>
-   </li>
-   <li>
-      <a href="#overlaps" title="http://data.europa.eu/949/overlaps">Overlaps</a>
    </li>
    <li>
       <a href="#packet" title="http://data.europa.eu/949/packet">Packet</a>
@@ -2283,10 +2381,6 @@ This ontology has the following classes and properties.</span>
       <a href="#parameterValueType" title="http://data.europa.eu/949/parameterValueType">parameter value type</a>
    </li>
    <li>
-      <a href="#relatedElectromagneticInterferencesObjParameter"
-         title="http://data.europa.eu/949/relatedElectromagneticInterferencesObjParameter">Parameters related to electromagnetic interferences</a>
-   </li>
-   <li>
       <a href="#parkingBrakeType" title="http://data.europa.eu/949/parkingBrakeType">Parking brake type</a>
    </li>
    <li>
@@ -2341,10 +2435,11 @@ This ontology has the following classes and properties.</span>
       <a href="#physicalVehicles" title="http://data.europa.eu/949/physicalVehicles">Physical Vehicles</a>
    </li>
    <li>
-      <a href="#physicalAnalogInput" title="http://data.europa.eu/949/physicalAnalogInput">PhysicalAnalogInput</a>
+      <a href="#physicalAnaloglInput" title="http://data.europa.eu/949/physicalAnaloglInput">PhysicalAnaloglInput</a>
    </li>
    <li>
-      <a href="#physicalAnalogOutput" title="http://data.europa.eu/949/physicalAnalogOutput">PhysicalAnalogOutput</a>
+      <a href="#physicalAnaloglOutput"
+         title="http://data.europa.eu/949/physicalAnaloglOutput">PhysicalAnaloglOutput</a>
    </li>
    <li>
       <a href="#physicalDigitalInput" title="http://data.europa.eu/949/physicalDigitalInput">PhysicalDigitalInput</a>
@@ -2367,6 +2462,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#plannedType" title="http://data.europa.eu/949/plannedType">Planned Type</a>
+   </li>
+   <li>
+      <a href="#platformObjParameter" title="http://data.europa.eu/949/platformObjParameter">Platform</a>
    </li>
    <li>
       <a href="#platformAreas" title="http://data.europa.eu/949/platformAreas">Platform Areas</a>
@@ -2416,9 +2514,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#protectedInfraElements"
          title="http://data.europa.eu/949/protectedInfraElements">Protected Infra Elements</a>
-   </li>
-   <li>
-      <a href="#proving" title="http://data.europa.eu/949/proving">Proving</a>
    </li>
    <li>
       <a href="#q_dir" title="http://data.europa.eu/949/q_dir">Q_Dir</a>
@@ -2475,8 +2570,14 @@ This ontology has the following classes and properties.</span>
       <a href="#referenceBorderPoint" title="http://data.europa.eu/949/referenceBorderPoint">reference border point</a>
    </li>
    <li>
+      <a href="#referenceDir" title="http://data.europa.eu/949/referenceDir">Reference Dir</a>
+   </li>
+   <li>
       <a href="#regenerativeBrakeState"
          title="http://data.europa.eu/949/regenerativeBrakeState">Regenerative Brake State</a>
+   </li>
+   <li>
+      <a href="#rejectionReason" title="http://data.europa.eu/949/rejectionReason">Rejection Reason</a>
    </li>
    <li>
       <a href="#removalRestrictionReport"
@@ -2523,8 +2624,8 @@ This ontology has the following classes and properties.</span>
       <a href="#restrictionState" title="http://data.europa.eu/949/restrictionState">Restriction State</a>
    </li>
    <li>
-      <a href="#RINFTechnicalObjectCharacteristic"
-         title="http://data.europa.eu/949/RINFTechnicalObjectCharacteristic">RINF Technical characteristic</a>
+      <a href="#rinfTechnicalObjectCharacteristic"
+         title="http://data.europa.eu/949/rinfTechnicalObjectCharacteristic">RINF Technical characteristic</a>
    </li>
    <li>
       <a href="#riskBuffer" title="http://data.europa.eu/949/riskBuffer">Risk Buffer</a>
@@ -2543,22 +2644,14 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/routeBookObjectParameter">Route book specific parameters</a>
    </li>
    <li>
-      <a href="#routeRequestingTransit"
-         title="http://data.europa.eu/949/routeRequestingTransit">Route Requesting Transit</a>
-   </li>
-   <li>
-      <a href="#routeRequiresPointLeft"
-         title="http://data.europa.eu/949/routeRequiresPointLeft">Route Requires Point Left</a>
-   </li>
-   <li>
-      <a href="#routeRequiresPointRight"
-         title="http://data.europa.eu/949/routeRequiresPointRight">Route Requires Point Right</a>
-   </li>
-   <li>
       <a href="#routeSuitabilities" title="http://data.europa.eu/949/routeSuitabilities">Route Suitabilities</a>
    </li>
    <li>
-      <a href="#routes" title="http://data.europa.eu/949/routes">Routes</a>
+      <a href="#rulesObjParameter" title="http://data.europa.eu/949/rulesObjParameter">Rules and restrictions</a>
+   </li>
+   <li>
+      <a href="#trackGenericObjParameter"
+         title="http://data.europa.eu/949/trackGenericObjParameter">Running track generic information</a>
    </li>
    <li>
       <a href="#safeConsistLengthInformationNecessary"
@@ -2581,7 +2674,8 @@ This ontology has the following classes and properties.</span>
       <a href="#secondaryTracks" title="http://data.europa.eu/949/secondaryTracks">Secondary Tracks</a>
    </li>
    <li>
-      <a href="#section" title="http://data.europa.eu/949/section">Section</a>
+      <a href="#solGenericObjParameter"
+         title="http://data.europa.eu/949/solGenericObjParameter">Section of line generic information</a>
    </li>
    <li>
       <a href="#tdsFrenchTrainDetectionSystemLimitation"
@@ -2596,10 +2690,19 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/frenchTrainDetectionSystemLimitation">Section with train detection limitation, only for the French network</a>
    </li>
    <li>
+      <a href="#segmentDescription" title="http://data.europa.eu/949/segmentDescription">Segment Description</a>
+   </li>
+   <li>
       <a href="#segmentProfile" title="http://data.europa.eu/949/segmentProfile">Segment Profile</a>
    </li>
    <li>
+      <a href="#segmentProfiles" title="http://data.europa.eu/949/segmentProfiles">Segment Profiles</a>
+   </li>
+   <li>
       <a href="#segmentSection" title="http://data.europa.eu/949/segmentSection">Segment Section</a>
+   </li>
+   <li>
+      <a href="#segmentProfileList" title="http://data.europa.eu/949/segmentProfileList">SegmentProfileList</a>
    </li>
    <li>
       <a href="#segments" title="http://data.europa.eu/949/segments">Segments</a>
@@ -2609,6 +2712,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#siding" title="http://data.europa.eu/949/siding">Siding</a>
+   </li>
+   <li>
+      <a href="#sidingObjParameter" title="http://data.europa.eu/949/sidingObjParameter">Siding</a>
    </li>
    <li>
       <a href="#signalObjParameter" title="http://data.europa.eu/949/signalObjParameter">Signal</a>
@@ -2745,8 +2851,7 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/stoppingPointReachDistance">Stopping Point Reach Distance</a>
    </li>
    <li>
-      <a href="#storageMediumFlashMemory"
-         title="http://data.europa.eu/949/storageMediumFlashMemory">StorageMediumFlashMemory</a>
+      <a href="#storageMediaFlash" title="http://data.europa.eu/949/storageMediaFlash">Storage Media Flash</a>
    </li>
    <li>
       <a href="#subCategory" title="http://data.europa.eu/949/subCategory">
@@ -2794,10 +2899,6 @@ This ontology has the following classes and properties.</span>
       <a href="#switches" title="http://data.europa.eu/949/switches">Switches</a>
    </li>
    <li>
-      <a href="#switchesAndCrossingsObjParameter"
-         title="http://data.europa.eu/949/switchesAndCrossingsObjParameter">Switches and crossings</a>
-   </li>
-   <li>
       <a href="#temperatureRange" title="http://data.europa.eu/949/temperatureRange">Temperature range</a>
    </li>
    <li>
@@ -2805,6 +2906,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#tenClassification" title="http://data.europa.eu/949/tenClassification">TEN classification of track</a>
+   </li>
+   <li>
+      <a href="#terminationReason" title="http://data.europa.eu/949/terminationReason">Termination Reason</a>
    </li>
    <li>
       <a href="#textMessageConfig" title="http://data.europa.eu/949/textMessageConfig">Text Message Config</a>
@@ -2870,23 +2974,13 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/trackResistanceToAppliedLoadsObjParameter">Track resistance to applied loads</a>
    </li>
    <li>
+      <a href="#trackTrainheader" title="http://data.europa.eu/949/trackTrainheader">Track Trainheader</a>
+   </li>
+   <li>
       <a href="#trackUsageAreas" title="http://data.europa.eu/949/trackUsageAreas">Track Usage Areas</a>
    </li>
    <li>
-      <a href="#trackEdgeGauges" title="http://data.europa.eu/949/trackEdgeGauges">TrackEdge Gauges</a>
-   </li>
-   <li>
-      <a href="#trackEdgeKmSigns" title="http://data.europa.eu/949/trackEdgeKmSigns">TrackEdge Km Signs</a>
-   </li>
-   <li>
-      <a href="#trackEdgeLoadingGauges"
-         title="http://data.europa.eu/949/trackEdgeLoadingGauges">TrackEdge Loading Gauges</a>
-   </li>
-   <li>
-      <a href="#trackEdgeProjections" title="http://data.europa.eu/949/trackEdgeProjections">TrackEdge Projections</a>
-   </li>
-   <li>
-      <a href="#teSpeedProfiles" title="http://data.europa.eu/949/teSpeedProfiles">TrackEdge Speed Profiles</a>
+      <a href="#trackTrainHeader" title="http://data.europa.eu/949/trackTrainHeader">TrackTrainHeader</a>
    </li>
    <li>
       <a href="#tractionSystems" title="http://data.europa.eu/949/tractionSystems">Traction Systems</a>
@@ -2895,7 +2989,7 @@ This ontology has the following classes and properties.</span>
       <a href="#trainCategoryType" title="http://data.europa.eu/949/trainCategoryType">Train Category Type</a>
    </li>
    <li>
-      <a href="#trainDetectionSystem" title="http://data.europa.eu/949/trainDetectionSystem">Train detection system</a>
+      <a href="#trainDetectionSystem" title="http://data.europa.eu/949/trainDetectionSystem">train detection system</a>
    </li>
    <li>
       <a href="#tdsMinAxleLoadVehicleCategory"
@@ -2949,25 +3043,11 @@ This ontology has the following classes and properties.</span>
       <a href="#trainUsage" title="http://data.europa.eu/949/trainUsage">Train Usage</a>
    </li>
    <li>
-      <a href="#transitLockingPointLeft"
-         title="http://data.europa.eu/949/transitLockingPointLeft">Transit Locking Point Left</a>
-   </li>
-   <li>
-      <a href="#transitLockingPointRight"
-         title="http://data.europa.eu/949/transitLockingPointRight">Transit Locking Point Right</a>
-   </li>
-   <li>
-      <a href="#transitZone" title="http://data.europa.eu/949/transitZone">Transit Zone</a>
-   </li>
-   <li>
       <a href="#transitionType" title="http://data.europa.eu/949/transitionType">Transition Type</a>
    </li>
    <li>
       <a href="#transitionsBetweenSystemsObjParameter"
          title="http://data.europa.eu/949/transitionsBetweenSystemsObjParameter">Transitions between systems</a>
-   </li>
-   <li>
-      <a href="#transits" title="http://data.europa.eu/949/transits">Transits</a>
    </li>
    <li>
       <a href="#travelTimeMeasurementPoints"
@@ -3017,6 +3097,9 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/tsiCompliantRadioObjParameter">TSI compliant radio (RMR)</a>
    </li>
    <li>
+      <a href="#etcs" title="http://data.europa.eu/949/etcs">TSI compliant train protection system (ETCS)</a>
+   </li>
+   <li>
       <a href="#tsiCompliantTrainProtectionSystemObjParameter"
          title="http://data.europa.eu/949/tsiCompliantTrainProtectionSystemObjParameter">TSI compliant train protection system (ETCS)</a>
    </li>
@@ -3037,9 +3120,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#tvps" title="http://data.europa.eu/949/tvps">Tvps</a>
-   </li>
-   <li>
-      <a href="#type" title="http://data.europa.eu/949/type">Type</a>
    </li>
    <li>
       <a href="#contactLineSystemType" title="http://data.europa.eu/949/contactLineSystemType">Type of contact line system</a>
@@ -3077,10 +3157,6 @@ This ontology has the following classes and properties.</span>
       <a href="#magneticBraking" title="http://data.europa.eu/949/magneticBraking">Use of magnetic brakes</a>
    </li>
    <li>
-      <a href="#usedGradeOfAutomation"
-         title="http://data.europa.eu/949/usedGradeOfAutomation">Used Grade of Automation</a>
-   </li>
-   <li>
       <a href="#validity" title="http://data.europa.eu/949/validity">validity</a>
    </li>
    <li>
@@ -3116,6 +3192,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#vehicleTypeTechnicalObjectCharacteristic"
          title="http://data.europa.eu/949/vehicleTypeTechnicalObjectCharacteristic">Vehicle type technical characteristic</a>
+   </li>
+   <li>
+      <a href="#verifiedRccObjParameter"
+         title="http://data.europa.eu/949/verifiedRccObjParameter">Vehicles for which Route compatibility is verified</a>
    </li>
    <li>
       <a href="#verticalAlignments" title="http://data.europa.eu/949/verticalAlignments">Vertical Alignments</a>
@@ -3160,14 +3240,9 @@ This ontology has the following classes and properties.</span>
       <a href="#wheelSetGaugeChangeoverFacility"
          title="http://data.europa.eu/949/wheelSetGaugeChangeoverFacility">Wheelset gauge changeover facility</a>
    </li>
-   <li>
-      <a href="#zoneLockingPointLeft" title="http://data.europa.eu/949/zoneLockingPointLeft">Zone Locking Point Left</a>
-   </li>
-   <li>
-      <a href="#zoneLockingPointRight"
-         title="http://data.europa.eu/949/zoneLockingPointRight">Zone Locking Point Right</a>
-   </li>
-</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+</ul><h4>Data Properties</h4><ul xmlns:era="http://data.europa.eu/949/"
+    xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
@@ -3283,13 +3358,6 @@ This ontology has the following classes and properties.</span>
       <a href="#atotsNidC" title="http://data.europa.eu/949/atotsNidC">ATO-TS NID_C</a>
    </li>
    <li>
-      <a href="#autoRoute" title="http://data.europa.eu/949/autoRoute">Auto Route</a>
-   </li>
-   <li>
-      <a href="#automatedTrainOperationDataParameter"
-         title="http://data.europa.eu/949/automatedTrainOperationDataParameter">Automated Train Operation (ATO)</a>
-   </li>
-   <li>
       <a href="#automaticClosing" title="http://data.europa.eu/949/automaticClosing">Automatic Closing</a>
    </li>
    <li>
@@ -3305,16 +3373,10 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/availableAdhesionPhysicalValue">Available Adhesion Physical Value</a>
    </li>
    <li>
-      <a href="#availableARS" title="http://data.europa.eu/949/availableARS">Available Ars</a>
-   </li>
-   <li>
       <a href="#axleSpacing" title="http://data.europa.eu/949/axleSpacing">Axle spacing</a>
    </li>
    <li>
       <a href="#azimuth" title="http://data.europa.eu/949/azimuth">Azimuth</a>
-   </li>
-   <li>
-      <a href="#baliseId" title="http://data.europa.eu/949/baliseId">Balise Id</a>
    </li>
    <li>
       <a href="#baliseMountingSystem" title="http://data.europa.eu/949/baliseMountingSystem">Balise Mounting System</a>
@@ -3347,9 +3409,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#brakeWeightPercentage"
          title="http://data.europa.eu/949/brakeWeightPercentage">Brake weight percentage</a>
-   </li>
-   <li>
-      <a href="#bufferStopId" title="http://data.europa.eu/949/bufferStopId">Buffer Stop Id</a>
    </li>
    <li>
       <a href="#byEmergencyBrake" title="http://data.europa.eu/949/byEmergencyBrake">By Emergency Brake</a>
@@ -3442,6 +3501,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#currentlyValid" title="http://data.europa.eu/949/currentlyValid">Currently valid</a>
+   </li>
+   <li>
+      <a href="#curvature" title="http://data.europa.eu/949/curvature">Curvature</a>
    </li>
    <li>
       <a href="#hasPlatformCurvature" title="http://data.europa.eu/949/hasPlatformCurvature">Curvature of the platform</a>
@@ -3719,6 +3781,9 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/etcsImplementsLevelCrossingProcedure">ETCS trackside implements level crossing procedure or an equivalent solution</a>
    </li>
    <li>
+      <a href="#eulynxBaseline" title="http://data.europa.eu/949/eulynxBaseline">Eulynx Baseline</a>
+   </li>
+   <li>
       <a href="#evnIdentifier" title="http://data.europa.eu/949/evnIdentifier">European vehicle Number Identifier</a>
    </li>
    <li>
@@ -3801,7 +3866,7 @@ This ontology has the following classes and properties.</span>
       <a href="#hasTSITrainDetection" title="http://data.europa.eu/949/hasTSITrainDetection">Existence of train detection system fully compliant with the TSI</a>
    </li>
    <li>
-      <a href="#hasWalkway" title="http://data.europa.eu/949/hasWalkway">Existence of walkways </a>
+      <a href="#hasWalkway" title="http://data.europa.eu/949/hasWalkway">Existence of walkways</a>
    </li>
    <li>
       <a href="#hasWaterRestocking" title="http://data.europa.eu/949/hasWaterRestocking">Existence of water restocking</a>
@@ -3815,6 +3880,10 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#fixed" title="http://data.europa.eu/949/fixed">Fixed</a>
+   </li>
+   <li>
+      <a href="#sidingFixedInstalationsDataParameter"
+         title="http://data.europa.eu/949/sidingFixedInstalationsDataParameter">Fixed installations for servicing trains</a>
    </li>
    <li>
       <a href="#fixedSeats" title="http://data.europa.eu/949/fixedSeats">Fixed seats</a>
@@ -3865,6 +3934,9 @@ This ontology has the following classes and properties.</span>
       <a href="#usesGroup555" title="http://data.europa.eu/949/usesGroup555">GSM-R use of group 555</a>
    </li>
    <li>
+      <a href="#handingOver" title="http://data.europa.eu/949/handingOver">Handing Over</a>
+   </li>
+   <li>
       <a href="#handoverPointFlag" title="http://data.europa.eu/949/handoverPointFlag">handover point flag</a>
    </li>
    <li>
@@ -3879,7 +3951,7 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasCantDefficiencyCompensation"
-         title="http://data.europa.eu/949/hasCantDefficiencyCompensation">Has cant defficiency compensation</a>
+         title="http://data.europa.eu/949/hasCantDefficiencyCompensation">Has cant deficiency compensation</a>
    </li>
    <li>
       <a href="#hasCurrentLimitation" title="http://data.europa.eu/949/hasCurrentLimitation">Has current limitation</a>
@@ -3916,6 +3988,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#holdTrain" title="http://data.europa.eu/949/holdTrain">Hold Train</a>
+   </li>
+   <li>
+      <a href="#iPAddress" title="http://data.europa.eu/949/iPAddress">I Paddress</a>
    </li>
    <li>
       <a href="#id" title="http://data.europa.eu/949/id">Id</a>
@@ -3994,13 +4069,7 @@ This ontology has the following classes and properties.</span>
       <a href="#isTimeSynchronised" title="http://data.europa.eu/949/isTimeSynchronised">Is Time Synchronised</a>
    </li>
    <li>
-      <a href="#isLeftPosition" title="http://data.europa.eu/949/isLeftPosition">IsLeftPosition</a>
-   </li>
-   <li>
       <a href="#issuedAt" title="http://data.europa.eu/949/issuedAt">Issued At</a>
-   </li>
-   <li>
-      <a href="#isTowardsTunnel" title="http://data.europa.eu/949/isTowardsTunnel">IsTowardsTunnel</a>
    </li>
    <li>
       <a href="#kilometer" title="http://data.europa.eu/949/kilometer">kilometer number</a>
@@ -4094,10 +4163,6 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/lineLayoutDataParameter">Line layout</a>
    </li>
    <li>
-      <a href="#lineSideSystemDegradedSituationDataParameter"
-         title="http://data.europa.eu/949/lineSideSystemDegradedSituationDataParameter">Line-side system for degraded situation</a>
-   </li>
-   <li>
       <a href="#linearCoordinate" title="http://data.europa.eu/949/linearCoordinate">Linear coordinate</a>
    </li>
    <li>
@@ -4179,10 +4244,10 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/manufacturingDateTime">Manufacturing Date-Time</a>
    </li>
    <li>
-      <a href="#markerFunctionStop" title="http://data.europa.eu/949/markerFunctionStop">Marker Function Stop</a>
+      <a href="#mapAreaRadius" title="http://data.europa.eu/949/mapAreaRadius">MapAreaRadius</a>
    </li>
    <li>
-      <a href="#markerId" title="http://data.europa.eu/949/markerId">Marker Id</a>
+      <a href="#markerFunctionStop" title="http://data.europa.eu/949/markerFunctionStop">Marker Function Stop</a>
    </li>
    <li>
       <a href="#mass" title="http://data.europa.eu/949/mass">Mass</a>
@@ -4399,9 +4464,6 @@ This ontology has the following classes and properties.</span>
       <a href="#signalId" title="http://data.europa.eu/949/signalId">Name of signal</a>
    </li>
    <li>
-      <a href="#nationalBorderId" title="http://data.europa.eu/949/nationalBorderId">National Border Id</a>
-   </li>
-   <li>
       <a href="#nationalLoadCapability"
          title="http://data.europa.eu/949/nationalLoadCapability">National classification for load capability</a>
    </li>
@@ -4420,6 +4482,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#nextStoppingPointSkip"
          title="http://data.europa.eu/949/nextStoppingPointSkip">Next Stopping Point Skip</a>
+   </li>
+   <li>
+      <a href="#nidDRTA" title="http://data.europa.eu/949/nidDRTA">Nid Drta</a>
    </li>
    <li>
       <a href="#nidATOTS" title="http://data.europa.eu/949/nidATOTS">NID_ATO-TS</a>
@@ -4546,6 +4611,10 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/operationalPlanIssuedAt">Operational Plan Issued At</a>
    </li>
    <li>
+      <a href="#opGenericDataParameter"
+         title="http://data.europa.eu/949/opGenericDataParameter">Operational point generic information</a>
+   </li>
+   <li>
       <a href="#operationalRadioHole" title="http://data.europa.eu/949/operationalRadioHole">Operational Radio Hole</a>
    </li>
    <li>
@@ -4574,7 +4643,10 @@ This ontology has the following classes and properties.</span>
       <a href="#outsideTemperature" title="http://data.europa.eu/949/outsideTemperature">Outside Temperature</a>
    </li>
    <li>
-      <a href="#nid" title="http://data.europa.eu/949/nid">Packet ID</a>
+      <a href="#packetId" title="http://data.europa.eu/949/packetId">Packet Id</a>
+   </li>
+   <li>
+      <a href="#nid" title="http://data.europa.eu/949/nid">Packet Identification</a>
    </li>
    <li>
       <a href="#pantographDataParameter"
@@ -4655,6 +4727,16 @@ This ontology has the following classes and properties.</span>
       <a href="#rbcPhone" title="http://data.europa.eu/949/rbcPhone">Phone number of ERTMS/ETCS Radio Block Center</a>
    </li>
    <li>
+      <a href="#pitch" title="http://data.europa.eu/949/pitch">Pitch</a>
+   </li>
+   <li>
+      <a href="#platformDataParameter"
+         title="http://data.europa.eu/949/platformDataParameter">Platform</a>
+   </li>
+   <li>
+      <a href="#portNumber" title="http://data.europa.eu/949/portNumber">Port Number</a>
+   </li>
+   <li>
       <a href="#portableBoardingAids" title="http://data.europa.eu/949/portableBoardingAids">Portable boarding aids</a>
    </li>
    <li>
@@ -4673,9 +4755,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#primaryLocationName" title="http://data.europa.eu/949/primaryLocationName">primary location name</a>
-   </li>
-   <li>
-      <a href="#priority" title="http://data.europa.eu/949/priority">Priority</a>
    </li>
    <li>
       <a href="#prioritySeats" title="http://data.europa.eu/949/prioritySeats">Priority seats</a>
@@ -4796,10 +4875,6 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/quasiStaticGuidingForce">Quasi static guiding force</a>
    </li>
    <li>
-      <a href="#otherRadioSystemsDataParameter"
-         title="http://data.europa.eu/949/otherRadioSystemsDataParameter">Radio Legacy Systems</a>
-   </li>
-   <li>
       <a href="#radioNetworkId" title="http://data.europa.eu/949/radioNetworkId">Radio Network ID</a>
    </li>
    <li>
@@ -4836,10 +4911,7 @@ This ontology has the following classes and properties.</span>
       <a href="#areaBoardingAid" title="http://data.europa.eu/949/areaBoardingAid">Range of use of the platform boarding aid</a>
    </li>
    <li>
-      <a href="#rastaOCId" title="http://data.europa.eu/949/rastaOCId">Rasta OCID</a>
-   </li>
-   <li>
-      <a href="#rastaServerId" title="http://data.europa.eu/949/rastaServerId">Rasta Server Id</a>
+      <a href="#rastaId" title="http://data.europa.eu/949/rastaId">Rasta Id</a>
    </li>
    <li>
       <a href="#errorCorrectionsOnboardExplanation"
@@ -4891,8 +4963,11 @@ This ontology has the following classes and properties.</span>
       <a href="#pReverse" title="http://data.europa.eu/949/pReverse">Reverse Direction Position</a>
    </li>
    <li>
-      <a href="#RINFTechnicalDataCharacteristic"
-         title="http://data.europa.eu/949/RINFTechnicalDataCharacteristic">RINF Technical characteristic</a>
+      <a href="#rinfTechnicalDataCharacteristic"
+         title="http://data.europa.eu/949/rinfTechnicalDataCharacteristic">RINF Technical characteristic</a>
+   </li>
+   <li>
+      <a href="#rollAngle" title="http://data.europa.eu/949/rollAngle">Roll Angle</a>
    </li>
    <li>
       <a href="#routeBookDataParameter"
@@ -4902,7 +4977,14 @@ This ontology has the following classes and properties.</span>
       <a href="#routingError" title="http://data.europa.eu/949/routingError">Routing Error</a>
    </li>
    <li>
+      <a href="#rulesDataParameter" title="http://data.europa.eu/949/rulesDataParameter">Rules and restrictions</a>
+   </li>
+   <li>
       <a href="#runTime" title="http://data.europa.eu/949/runTime">Run Time</a>
+   </li>
+   <li>
+      <a href="#trackGenericDataParameter"
+         title="http://data.europa.eu/949/trackGenericDataParameter">Running track generic information</a>
    </li>
    <li>
       <a href="#safeTrainLength" title="http://data.europa.eu/949/safeTrainLength">Safe Train Length</a>
@@ -4948,6 +5030,10 @@ This ontology has the following classes and properties.</span>
          title="http://data.europa.eu/949/hasSchematicOverviewOPDigitalForm">Schematic overview of the operational point in digital form</a>
    </li>
    <li>
+      <a href="#solGenericDataParameter"
+         title="http://data.europa.eu/949/solGenericDataParameter">Section of line generic information</a>
+   </li>
+   <li>
       <a href="#frenchTrainDetectionSystemLimitationApplicable"
          title="http://data.europa.eu/949/frenchTrainDetectionSystemLimitationApplicable">Section with train detection limitation</a>
    </li>
@@ -4961,11 +5047,11 @@ This ontology has the following classes and properties.</span>
       <a href="#serialNumber" title="http://data.europa.eu/949/serialNumber">Serial Number</a>
    </li>
    <li>
-      <a href="#setupTime" title="http://data.europa.eu/949/setupTime">Setup Time</a>
-   </li>
-   <li>
       <a href="#shortestDistanceBetweenPantographsInContactWithOCL"
          title="http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL">Shortest distance between pantographs in contact with OCL</a>
+   </li>
+   <li>
+      <a href="#sidingDataParameter" title="http://data.europa.eu/949/sidingDataParameter">Siding</a>
    </li>
    <li>
       <a href="#signalDataParameter" title="http://data.europa.eu/949/signalDataParameter">Signal</a>
@@ -5034,14 +5120,11 @@ This ontology has the following classes and properties.</span>
       <a href="#stationaryNoiseLevel" title="http://data.europa.eu/949/stationaryNoiseLevel">Stationary noise level</a>
    </li>
    <li>
-      <a href="#statusTechnicalManufacturerSpecificValue"
-         title="http://data.europa.eu/949/statusTechnicalManufacturerSpecificValue">status Technical Manufacturer Specific Value</a>
+      <a href="#statusTechnicalManufacturerSpecificMessage"
+         title="http://data.europa.eu/949/statusTechnicalManufacturerSpecificMessage">StatusTechnicalManufacturerSpecificMessage</a>
    </li>
    <li>
       <a href="#redLightsRequired" title="http://data.europa.eu/949/redLightsRequired">Steady red lights required</a>
-   </li>
-   <li>
-      <a href="#stopLocationId" title="http://data.europa.eu/949/stopLocationId">Stop Location Id</a>
    </li>
    <li>
       <a href="#structuralCategory" title="http://data.europa.eu/949/structuralCategory">Structural category</a>
@@ -5083,6 +5166,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#systemSeparationInfoSwitchOffBreaker"
          title="http://data.europa.eu/949/systemSeparationInfoSwitchOffBreaker">System separation info switch off breaker</a>
+   </li>
+   <li>
+      <a href="#systemVersion" title="http://data.europa.eu/949/systemVersion">System Version</a>
    </li>
    <li>
       <a href="#t_lssma" title="http://data.europa.eu/949/t_lssma">T_LSSMA</a>
@@ -5148,6 +5234,9 @@ This ontology has the following classes and properties.</span>
       <a href="#timeValue" title="http://data.europa.eu/949/timeValue">Time Value</a>
    </li>
    <li>
+      <a href="#timeOutResponse" title="http://data.europa.eu/949/timeOutResponse">TimeOutResponse</a>
+   </li>
+   <li>
       <a href="#tipShift" title="http://data.europa.eu/949/tipShift">Tip Shift</a>
    </li>
    <li>
@@ -5195,10 +5284,6 @@ This ontology has the following classes and properties.</span>
       <a href="#trainMaxWagons" title="http://data.europa.eu/949/trainMaxWagons">Train Max Wagons</a>
    </li>
    <li>
-      <a href="#trainProtectionLegacySystemDataParameter"
-         title="http://data.europa.eu/949/trainProtectionLegacySystemDataParameter">Train protection legacy systems</a>
-   </li>
-   <li>
       <a href="#trainRunningNumber" title="http://data.europa.eu/949/trainRunningNumber">Train Running Number</a>
    </li>
    <li>
@@ -5213,7 +5298,7 @@ This ontology has the following classes and properties.</span>
       <a href="#transportableOnFerry" title="http://data.europa.eu/949/transportableOnFerry">Transportable on ferry</a>
    </li>
    <li>
-      <a href="#tsiSwitchCrossing" title="http://data.europa.eu/949/tsiSwitchCrossing">TSI compliance of in service values for switches and crossings</a>
+      <a href="#tsiSwitchCrossing" title="http://data.europa.eu/949/tsiSwitchCrossing">TSI compliance of in-service values for switches and crossings</a>
    </li>
    <li>
       <a href="#tsiCompliant" title="http://data.europa.eu/949/tsiCompliant">Tsi compliant</a>
@@ -5248,12 +5333,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#uopid" title="http://data.europa.eu/949/uopid">Unique OP ID</a>
-   </li>
-   <li>
-      <a href="#uopId" title="http://data.europa.eu/949/uopId">Uop Id</a>
-   </li>
-   <li>
-      <a href="#upstreamTransits" title="http://data.europa.eu/949/upstreamTransits">Upstream Transits</a>
    </li>
    <li>
       <a href="#lengthOfPlatform" title="http://data.europa.eu/949/lengthOfPlatform">Usable length of platform</a>
@@ -5413,4 +5492,4 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#z" title="http://data.europa.eu/949/z">Z</a>
    </li>
-</ul><iframe src="webvowl/index.html"></iframe> 
+</ul><iframe src="../webvowl/index.html"></iframe> 
