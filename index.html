@@ -1,132 +1,217 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" href="resources/primer.css" media="screen"/>
-<link rel="stylesheet" href="resources/rec.css" media="screen"/>
-<link rel="stylesheet" href="resources/extra.css" media="screen"/>
-<link rel="stylesheet" href="resources/owl.css" media="screen"/>
-<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
-<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
-<link rel="stylesheet" href="resources/slider.css" media="screen"/>
-<meta name="color-scheme" content="dark light">
-<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
-	<dark-mode-toggle class="slider"></dark-mode-toggle>
-</div>
-<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>Draft Extended ERA Ontology</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="resources/primer.css" media="screen" />
+	<link rel="stylesheet" href="resources/rec.css" media="screen" />
+	<link rel="stylesheet" href="resources/extra.css" media="screen" />
+	<link rel="stylesheet" href="resources/owl.css" media="screen" />
+	<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)" />
+	<link rel="stylesheet" href="resources/slider.css" media="screen" />
+	<meta name="color-scheme" content="dark light">
+	<script type="module" src="resources/dark-mode-toggle.mjs"></script>
+	<div class="darkmode">
+		<dark-mode-toggle class="slider"></dark-mode-toggle>
+	</div>
+	<link rel="icon" type="image/png" href="resources/rdf.icon" />
+	<title>Extended ERA Ontology</title>
 
 
-<!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://data.europa.eu/949/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://data.europa.eu/949/","name":"Draft Extended ERA Ontology", "headline":"Document describing the ontology http://data.europa.eu/949/", "dateReleased":"2024-04-18", "dateModified":"2025-02-19", "version":"v3.1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Olatunji-Felix AJALA","url":"https://rail-research.europa.eu/system_pillar/"},{"@type":"Person","name":"Stefan Wegele","url":"https://rail-research.europa.eu/system_pillar/"}], "contributor":[{"@type":"Person",}]}</script>
+	<!-- SCHEMA.ORG METADATA -->
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://data.europa.eu/949/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://data.europa.eu/949/","name":"Extended ERA Ontology", "headline":"Document describing the ontology http://data.europa.eu/949/", "dateReleased":"Thu Mar 20 13:12:00 CET 2025", "dateModified":"2025-03-17", "version":"v1.1", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology/era-ontology/-/tree/ext-ccstms?ref_type=heads", "author":[{"@type":"Person","name":"Olatunji-Felix AJALA","url":"https://github.com/Ajala111/EXT_ERA_DOC"},{"@type":"Person","name":"Stefan Wegele"}], "contributor":[{"@type":"Person","name":"Benedikt Wenzel","url":"benedikt.wenzel@nextrail.com"},{"@type":"Person","name":"Harish Narayanan","url":"harish.narayanan@nextrail.com"},{"@type":"Person","name":"Karl Klinge","url":"karl.klinge@praedicta.de"},{"@type":"Person","name":"Kehinde-Emmanuel Enisan","url":"dot@lawconcon.com"},{"@type":"Person","name":"Ralph Müller"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
-function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
-	var hash = location.hash;
-	if($(hash).offset()!=null){
-	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
-}
-	loadTOC();
-}
-function loadTOC(){
-	//process toc dynamically
-	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
-	  jQuery(".list").each(function(){
-		if(jQuery(this).is('h2')){
-			if(j>0){
-				t+='</ul>';
-				j=0;
+	<script src="resources/jquery.js"></script>
+	<script src="resources/marked.min.js"></script>
+	<script>
+		function loadHash() {
+			jQuery(".markdown").each(function (el) { jQuery(this).after(marked.parse(jQuery(this).text())).remove() });
+			var hash = location.hash;
+			if ($(hash).offset() != null) {
+				$('html, body').animate({ scrollTop: $(hash).offset().top }, 0);
 			}
-			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-			i++;
+			loadTOC();
 		}
-		if(jQuery(this).is('h3')){
-			if(j==0){
-				t+='<ul>';
-			}
-			j++;
-			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		function loadTOC() {
+			//process toc dynamically
+			var t = '<h2>Table of contents</h2><ul>'; i = 1; j = 0;
+			jQuery(".list").each(function () {
+				if (jQuery(this).is('h2')) {
+					if (j > 0) {
+						t += '</ul>';
+						j = 0;
+					}
+					t += '<li>' + i + '. <a href=#' + jQuery(this).attr('id') + '>' + jQuery(this).ignore("span").text() + '</a></li>';
+					i++;
+				}
+				if (jQuery(this).is('h3')) {
+					if (j == 0) {
+						t += '<ul>';
+					}
+					j++;
+					t += '<li>' + (i - 1) + '.' + j + '. ' + '<a href=#' + jQuery(this).attr('id') + '>' + jQuery(this).ignore("span").text() + '</a></li>';
+				}
+			});
+			t += '</ul>';
+			$("#toc").html(t);
 		}
-	  });
-	  t+='</ul>';
-	  $("#toc").html(t); 
-}
- $.fn.ignore = function(sel){
-        return this.clone().find(sel||">*").remove().end();
- };    $(function(){
-      $("#abstract").load("./sections/abstract-en.html"); 
-      $("#introduction").load("./sections/introduction-en.html"); 
-      $("#nstable").load("./sections/ns-en.html"); 
-      $("#overview").load("./sections/overview-en.html"); 
-      $("#description").load("./sections/description-en.html"); 
-      $("#references").load("./sections/references-en.html"); 
-      $("#crossref").load("./sections/crossref-en.html", null, loadHash); 
-    });
-    </script> 
-  </head> 
+		$.fn.ignore = function (sel) {
+			return this.clone().find(sel || ">*").remove().end();
+		}; $(function () {
+			$("#abstract").load("./sections/abstract-en.html");
+			$("#introduction").load("./sections/introduction-en.html");
+			$("#nstable").load("./sections/ns-en.html");
+			$("#overview").load("./sections/overview-en.html");
+			$("#description").load("./sections/description-en.html");
+			$("#references").load("./sections/references-en.html");
+			$("#crossref").load("./sections/crossref-en.html", null, loadHash);
+		});
+	</script>
+</head>
 
 <body>
-<div class="container">
-<div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>Draft Extended ERA Ontology</h1>
-<h2>Release: 2025-02-23</h2>
+	<div class="container">
+		<div class="head">
+			<div style="float:right">language <a href="index.html"><b>en</b></a> </div>
+			<h1>Extended ERA Ontology</h1>
 
 
-<dl>
-<dt>Modified on: 2025-02-19</dt>
-<dt>Latest version:</dt>
-<dd><a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a></dd>
-<dt>Previous version:</dt>
-<dd><a href="https://github.com/Interoperable-data/ERA_vocabulary/releases/v3.0.0">https://github.com/Interoperable-data/ERA_vocabulary/releases/v3.0.0</a></dd>
-<dt>Revision:</dt>
-<dd>v3.1.0</dd>
-<dt>Issued on:</dt>
-<dd>2024-04-18</dd>
-<dt>Authors:</dt>
-<dd><a href="https://github.com/Ajala111/EXT_ERA_DOC/tree/master">Olatunji-Felix AJALA</a>, <a href="https://rail-research.europa.eu/system_pillar/">Europe's Rail Joint Undertaking</a></dd><dd><a href="https://rail-research.europa.eu/system_pillar/">Stefan Wegele</a>, <a href="https://rail-research.europa.eu/system_pillar/">Europe's Rail Joint Undertaking</a></dd>
+			<dl>
+				<dt>Modified on: 2025-03-17</dt>
+				<dt>Latest version:</dt>
+				<dd><a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a></dd>
+				<dt>Previous version:</dt>
+				<dd><a href="https://github.com/Interoperable-data/ERA_vocabulary/releases/v3.0.0">https://github.com/Interoperable-data/ERA_vocabulary/releases/v3.0.0</a></dd>
+				<dt>Revision:</dt>
+				<dd>v1.1</dd>
+				<dt>Issued on:</dt>
+				<dd>2024-04-18</dd>
+				<dt>Authors:</dt>
+				<dd><a href="https://github.com/Ajala111/EXT_ERA_DOC">Olatunji-Felix AJALA</a><a href="mailto:f.ajala@lawconcon.com">&#9993;</a></dd>
+				<dd>Stefan Wegele<a href="mailto:stefan.wegele@siemens.com">&#9993;</a></dd>
 
-<dt>Contributors:</dt>
-<dd>To be updated</dd>
+				<dt>Contributors:</dt>
+				<dd>Benedikt Wenzel<a href="mailto:benedikt.wenzel@nextrail.com">&#9993;</a></dd>
+				<dd>Harish Narayanan<a href="mailto:harish.narayanan@nextrail.com">&#9993;</a></dd>
+				<dd>Karl Klinge<a href="mailto:karl.klinge@praedicta.de">&#9993;</a></dd>
+				<dd>Kehinde-Emmanuel Enisan<a href="mailto:dot@lawconcon.com">&#9993;</a></dd>
+				<dd>Ralph Müller<a href="mailto:ralph.r.mueller@deutschebahn.com">&#9993;</a></dd>
 
-<dt>Publisher:</dt>
-<dd>European Union Agency for Railways</dd>
+				<dt>Publisher:</dt>
+				<dd>Europe’s Rail Joint Undertaking, <a href="https://rail-research.europa.eu/">ERJU</a></dd>
+				<dt>Imported Ontologies:</dt>
+				<dd><a href="https://www.w3.org/2006/time#">Time Ontology</a></dd>
+				<dd><a href="https://opengeospatial.github.io/ogc-geosparql/geosparql11/geo.ttl">GeoSPARQL</a></dd>
+				<dd><a href="https://www.w3.org/ns/org#">Organisations Ontology</a></dd>
+				<dd><a href="https://linkedvocabs.org/data/era-ontology/3.1.0/doc/index.html">https://linkedvocabs.org/data/era-ontology/3.1.0/doc/index.html</a></dd>
 
-<dt>Imported Ontologies:</dt>
-<dd>ERA Ontology. Version 3.1.0</dd><dd><a href="http://www.w3.org/2006/time#">Time Ontology</a></dd><dd><a href="http://www.opengis.net/ont/geosparql#">GeoSPARQL</a></dd><dd><a href="http://www.w3.org/ns/org#">Organisations Ontology</a></dd>
+				<dt>See also:</dt>
+				<dd><a href="https://polarion.rail-research.europa.eu/polarion/#/project/SPT2TS/wiki/CCS_TMS%20Data%20Model/TCCS%20SD1%20-%20Data%20Model_INFRA">https://polarion.rail-research.europa.eu/polarion/#/project/SPT2TS/wiki/CCS_TMS%20Data%20Model/TCCS%20SD1%20-%20Data%20Model_INFRA</a></dd>
+				<dd><a href="https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf">https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf</a></dd>
+				<dd><a href="https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf">https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf</a></dd>
 
-<dt>See also:</dt>
-<dd><a href="https://polarion.rail-research.europa.eu/polarion/#/project/SPT2TS/wiki/CCS_TMS%20Data%20Model/TCCS%20SD1%20-%20Data%20Model_INFRA">https://polarion.rail-research.europa.eu/polarion/#/project/SPT2TS/wiki/CCS_TMS%20Data%20Model/TCCS%20SD1%20-%20Data%20Model_INFRA</a></dd><dd><a href="https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf">https://www.era.europa.eu/sites/default/files/registers/docs/iu-eratv_application_guide_for_register_2016-797_en.pdf</a></dd><dd><a href="https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf">https://www.era.europa.eu/sites/default/files/registers/docs/rinf_application_guide_for_register_en.pdf</a></dd>
+				<dt>Download serialization:</dt>
+				<dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd>
+				<dt>License:</dt>
+				<dd>
+					<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+				</dd>
+				<dt>Visualization:</dt>
+				<dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+				<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> -->
+				<dt>Cite as:</dt>
+				<dd>© Europe’s Rail Joint Undertaking, 2025;  Extended ERA Ontology. Revision: v1.1.</dd>
+				<dt>Vocabulary maintained at:</dt>
+				<dd><a href="https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology/era-ontology/-/tree/ext-ccstms?ref_type=heads">https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology/era-ontology/-/tree/ext-ccstms?ref_type=heads</a></dd>
+			</dl>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
-</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Draft Extended ERA Ontology. Revision: v3.1.0.</dd>
-</dl>
+			<hr />
+		</div>
+		<div class="status">
+			<div>
+				<span>Extended ERA Ontology Specification</span>
+			</div>
+		</div>     <div id="abstract"></div>
+		<div id="toc"></div>     <div id="introduction"></div>
+		<div id="nstable"></div>
+		<div id="overview"></div>
+		<div id="description"></div>
+		<div id="crossref"></div>
+		<div id="references"></div>
+		<div id="changelog"></div>
+		<div id="acknowledgments">
+			<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<hr/>
-</div>
-<div class="status">
-<div>
-<span>Extended ERA-Ontology Specification Draft</span>
-</div>
-</div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="introduction"></div>
-	  <div id="nstable"></div>
-     <div id="overview"></div>
-     <div id="description"></div>
-     <div id="crossref"></div>
-     <div id="references"></div>
-     <div id="changelog"></div>
-<div id="acknowledgments">
-<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p>
-The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
-</div>
+			<section class="contributors-section">
+				<h2>Contributors</h2>
+				<p>
+					The development of this ontology has been made possible through the valuable contributions of several individuals. Their support, and thoughtful input have been instrumental in shaping the outcome of this work.
+				</p>
+				<ul class="contributors-list">
+					<li>Benedikt Wenzel</li>
+					<li>Dragos Patru</li>
+					<li>Fidel Santiago</li>
+					<li>Ghislain Atemezing</li>
+					<li>Harish Narayanan</li>
+					<li>Karl Klinge</li>
+					<li>Kehinde-Emmanuel Enisan</li>
+					<li>Khaled Elhadary</li>
+					<li>Marina Aguado</li>
+					<li>Olatunji-Felix Ajala</li>
+					<li>Oscar Corcho</li>
+					<li>Ralph Müller</li>
+					<li>Stefan Wegele</li>
+				</ul>
+			</section>
+
+			<style>
+				.contributors-section {
+					background-color: #f9f9f9;
+					border-radius: 12px;
+					padding: 20px 30px;
+					margin: 40px auto;
+					max-width: 600px;
+					box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+					font-family: Arial, sans-serif;
+				}
+
+					.contributors-section h2 {
+						font-size: 28px;
+						color: #333;
+						border-bottom: 2px solid #4CAF50;
+						padding-bottom: 8px;
+						margin-bottom: 15px;
+					}
+
+					.contributors-section p {
+						color: #555;
+						font-size: 16px;
+						line-height: 1.5;
+						margin-bottom: 20px;
+					}
+
+				.contributors-list {
+					list-style: none;
+					padding-left: 0;
+				}
+
+					.contributors-list li {
+						font-size: 16px;
+						padding: 6px 0;
+						border-bottom: 1px dashed #ccc;
+					}
+
+						.contributors-list li:last-child {
+							border-bottom: none;
+						}
+			</style>
+
+			<p>
+				Special thanks also goes to <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.
+			</p>
+		</div>
 
 
-</div>
+	</div>
 </body>
 </html>
