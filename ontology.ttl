@@ -8,10 +8,10 @@
 
 <http://data.europa.eu/949/> rdf:type owl:Ontology ;
                               <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
-                              <http://purl.org/dc/terms/contributor> _:genid-nodeid-node1impll5k1x2 ,
-                                                                     _:genid-nodeid-node1impll5k1x3 ,
-                                                                     _:genid-nodeid-node1impll5k1x4 ,
-                                                                     _:genid-nodeid-node1impll5k1x5 ,
+                              <http://purl.org/dc/terms/contributor> _:genid-nodeid-node1imsei2uqx2 ,
+                                                                     _:genid-nodeid-node1imsei2uqx3 ,
+                                                                     _:genid-nodeid-node1imsei2uqx4 ,
+                                                                     _:genid-nodeid-node1imsei2uqx5 ,
                                                                      _:genid1 ,
                                                                      _:genid2 ,
                                                                      _:genid3 ,
@@ -1098,16 +1098,6 @@ If an external link is provided, the IM must ensure that the document is availab
                      <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
                      rdfs:comment "Defines the allowed driving modes "@en ;
                      rdfs:label "Allowed Driving Modes"@en .
-
-
-###  http://data.europa.eu/949/anyClasses
-:anyClasses rdf:type owl:ObjectProperty ;
-            rdfs:domain :SupportedOnBoardEquipment ;
-            rdfs:range :AnyClass ;
-            :ccsView "OPP" ;
-            <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
-            rdfs:comment "Provides a key-value container for IM-specific onboard-equipment."@en ;
-            rdfs:label "Any Classes"@en .
 
 
 ###  http://data.europa.eu/949/appliedToTrains
@@ -5571,15 +5561,15 @@ If an external link is provided, the IM must ensure that the document is availab
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
-###  http://data.europa.eu/949/mapAreas
-:mapAreas rdf:type owl:ObjectProperty ;
-          rdfs:domain :MapMgmt ;
-          rdfs:range :Map ;
-          :ccsView "MAP" ;
-          :ordered "byKey" ;
-          <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
-          rdfs:comment "Defines container for all Maps in a system"@en ;
-          rdfs:label "Map Areas"@en .
+###  http://data.europa.eu/949/maps
+:maps rdf:type owl:ObjectProperty ;
+      rdfs:domain :MapMgmt ;
+      rdfs:range :Map ;
+      :ccsView "MAP" ;
+      :ordered "byKey" ;
+      <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
+      rdfs:comment "Defines container for all Maps in a system"@en ;
+      rdfs:label "Map-Areas"@en .
 
 
 ###  http://data.europa.eu/949/maxAdhesion
@@ -6057,6 +6047,16 @@ The reason for deprecating this property is that it is defined as \"References a
             <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
             rdfs:comment "refrence to the corresponding Topo Area"@en ;
             rdfs:label "OnTopoArea"@en .
+
+
+###  http://data.europa.eu/949/onboardExtensions
+:onboardExtensions rdf:type owl:ObjectProperty ;
+                   rdfs:domain :SupportedOnBoardEquipment ;
+                   rdfs:range :OnBoardExtension ;
+                   :ccsView "OPP" ;
+                   <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
+                   rdfs:comment "Provides a key-value container for IM-specific onboard-equipment."@en ;
+                   rdfs:label "on-board Extensions"@en .
 
 
 ###  http://data.europa.eu/949/onboardOperatingMode
@@ -11753,16 +11753,6 @@ EN 50206-1:2010""" ;
                     rdfs:label "Centralised Opening"@en .
 
 
-###  http://data.europa.eu/949/className
-:className rdf:type owl:DatatypeProperty ;
-           rdfs:domain :AnyClass ;
-           rdfs:range xsd:string ;
-           :ccsView "OPP" ;
-           <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
-           rdfs:comment "Defines the key-attribute in a key-value-pair. Used for annotation of IM-specific onboard-equipment"@en ;
-           rdfs:label "Class Name"@en .
-
-
 ###  http://data.europa.eu/949/clearancePoint
 :clearancePoint rdf:type owl:DatatypeProperty ;
                 rdfs:domain :FoulingPoint ;
@@ -11949,12 +11939,22 @@ EN 50206-1:2010""" ;
 
 ###  http://data.europa.eu/949/content
 :content rdf:type owl:DatatypeProperty ;
-         rdfs:domain :AnyClass ;
+         rdfs:domain :OnBoardExtension ;
          rdfs:range xsd:base64Binary ;
          :ccsView "OPP" ;
          <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
          rdfs:comment "Defines the value-attribute in a key-value-pair. Used for annotation of IM-specific onboard-equipment"@en ;
          rdfs:label "Content"@en .
+
+
+###  http://data.europa.eu/949/contentType
+:contentType rdf:type owl:DatatypeProperty ;
+             rdfs:domain :OnBoardExtension ;
+             rdfs:range xsd:string ;
+             :ccsView "OPP" ;
+             <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
+             rdfs:comment "Defines the key-attribute in a key-value-pair. Used for annotation of IM-specific onboard-equipment"@en ;
+             rdfs:label "Content Type"@en .
 
 
 ###  http://data.europa.eu/949/creationTime
@@ -14994,83 +14994,6 @@ EN 15437-1:2009""" ;
            <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
            rdfs:comment "defines the ip address for communication purposes"@en ;
            rdfs:label "I Paddress"@en .
-
-
-###  http://data.europa.eu/949/id
-:id rdf:type owl:DatatypeProperty ;
-    rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
-    rdfs:domain [ rdf:type owl:Class ;
-                  owl:unionOf ( :AllocationSection
-                                :AreaOfControl
-                                :AuxiliarySwitch
-                                :Balise
-                                :BaliseGroup
-                                :Bridge
-                                :BufferStop
-                                :Controller
-                                :Crossing
-                                :DangerPoint
-                                :Derailer
-                                :DriveProtectionSection
-                                :DriveProtectionSectionGroup
-                                :ETCSMarker
-                                :Equipment
-                                :FieldObjectController
-                                :FoulingPoint
-                                :InputButton
-                                :InputSwitch
-                                :LevelCrossing
-                                :LinearElement
-                                :Map
-                                :MovementEvent
-                                :MovementPermission
-                                :NationalBorder
-                                :NetRelation
-                                :OIArea
-                                :OISegment
-                                :OperationalPlanMovement
-                                :OperationalPlanRestriction
-                                :OperationalPlanWarningMeasure
-                                :PhysicalAnalogInput
-                                :PhysicalAnalogOutput
-                                :PhysicalDigitalInput
-                                :PhysicalDigitalOutput
-                                :PhysicalNetworkInterface
-                                :PhysicalSeparatedInput
-                                :PhysicalSeparatedOutput
-                                :Platform
-                                :PowerSupply
-                                :RestrictionAreaState
-                                :RestrictionEvent
-                                :Sleepers
-                                :SlipCrossing
-                                :StopLocation
-                                :StorageMediumFlash
-                                :Switch
-                                :TimingPoint
-                                :TopoArea
-                                :TrackOccupationState
-                                :TrainDetector
-                                :TravelTimeMeasurementPoint
-                                :TvpSection
-                                :Underpass
-                                :WarningAreaState
-                                :WarningDevice
-                                :WarningMeasureEvent
-                              )
-                ] ;
-    rdfs:range xsd:string ;
-    :ccsView "ENG" ,
-             "Equipment" ,
-             "INFRA" ,
-             "MAP" ,
-             "OI" ,
-             "OPP" ,
-             "TP" ;
-    :key "global" ;
-    <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
-    rdfs:comment "Defines the Identity of the object; used for referencing"@en ;
-    rdfs:label "Id"@en .
 
 
 ###  http://data.europa.eu/949/idPhoneErtmsRadioBlockCenter
@@ -22824,14 +22747,6 @@ With the extension of scope according to Interoperability Directive 2016/797, ge
                    rdfs:label "Allocation Section"@en .
 
 
-###  http://data.europa.eu/949/AnyClass
-:AnyClass rdf:type owl:Class ;
-          :ccsView "OPP" ;
-          <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
-          rdfs:comment "A container class for a non-standard key-value-property. Messages need sometimes IM-specific information."@en ;
-          rdfs:label "Any Class"@en .
-
-
 ###  http://data.europa.eu/949/AreaOfControl
 :AreaOfControl rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -25103,7 +25018,7 @@ For the following cases, it is not possible to use EN 15528:20021categories of l
 ###  http://data.europa.eu/949/MapMgmt
 :MapMgmt rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :mapAreas ;
+                           owl:onProperty :maps ;
                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
                            owl:onClass :Map
                          ] ;
@@ -25534,6 +25449,14 @@ To make this even more precise, net relations include information about whether 
            <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
            rdfs:comment "Defines the topology reference information for a segment profile."@en ;
            rdfs:label "OI Segment"@en .
+
+
+###  http://data.europa.eu/949/OnBoardExtension
+:OnBoardExtension rdf:type owl:Class ;
+                  :ccsView "OPP" ;
+                  <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
+                  rdfs:comment "A container class for a non-standard key-value-property. Messages need sometimes IM-specific information."@en ;
+                  rdfs:label "On-Board Extension"@en .
 
 
 ###  http://data.europa.eu/949/OperationalConsist
@@ -26762,9 +26685,9 @@ Industrial Risk Area: locations where it is dangerous for the driver to step out
 ###  http://data.europa.eu/949/SupportedOnBoardEquipment
 :SupportedOnBoardEquipment rdf:type owl:Class ;
                            rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                             owl:onProperty :anyClasses ;
+                                             owl:onProperty :onboardExtensions ;
                                              owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-                                             owl:onClass :AnyClass
+                                             owl:onClass :OnBoardExtension
                                            ] ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty :etcsSystemVersions ;
