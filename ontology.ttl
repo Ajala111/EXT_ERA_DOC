@@ -7,7 +7,7 @@
 @base <http://data.europa.eu/949/> .
 
 <http://data.europa.eu/949/> rdf:type owl:Ontology ;
-                              <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
+                              <http://creativecommons.org/ns#license> <https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj> ;
                               <http://purl.org/dc/terms/contributor> _:genid-nodeid-node1imsei2uqx2 ,
                                                                      _:genid-nodeid-node1imsei2uqx3 ,
                                                                      _:genid-nodeid-node1imsei2uqx4 ,

@@ -1,5 +1,5 @@
 <http://data.europa.eu/949/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://data.europa.eu/949/> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://data.europa.eu/949/> <http://creativecommons.org/ns#license> <https://eur-lex.europa.eu/eli/dec_impl/2017/863/oj> .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/contributor> <http://data.europa.eu/949/_:genid-nodeid-node1imsei2uqx2> .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/contributor> <http://data.europa.eu/949/_:genid-nodeid-node1imsei2uqx3> .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/contributor> <http://data.europa.eu/949/_:genid-nodeid-node1imsei2uqx4> .
